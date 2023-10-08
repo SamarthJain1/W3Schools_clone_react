@@ -1,15 +1,20 @@
 {
   "files": {
-    "main.css": "/W3Schools_clone_react/static/css/main.9c14869a.css",
-    "main.js": "/W3Schools_clone_react/static/js/main.e35b792c.js",
+    "main.css": "/W3Schools_clone_react/static/css/main.a52fecc6.css",
+    "main.js": "/W3Schools_clone_react/static/js/main.f9a46375.js",
     "static/js/787.b82d521d.chunk.js": "/W3Schools_clone_react/static/js/787.b82d521d.chunk.js",
+    "static/media/image2.png": "/W3Schools_clone_react/static/media/image2.82121ab37fe1cbf831b7.png",
+    "static/media/image3.png": "/W3Schools_clone_react/static/media/image3.00c67e8d24dfdebb92c4.png",
+    "static/media/image4.png": "/W3Schools_clone_react/static/media/image4.179ced518cfc44e9e01b.png",
+    "static/media/image1.png": "/W3Schools_clone_react/static/media/image1.fd4677fa560f88330d36.png",
+    "static/media/image5.png": "/W3Schools_clone_react/static/media/image5.f3d1ab3986dca7bfb56b.png",
     "index.html": "/W3Schools_clone_react/index.html",
-    "main.9c14869a.css.map": "/W3Schools_clone_react/static/css/main.9c14869a.css.map",
-    "main.e35b792c.js.map": "/W3Schools_clone_react/static/js/main.e35b792c.js.map",
+    "main.a52fecc6.css.map": "/W3Schools_clone_react/static/css/main.a52fecc6.css.map",
+    "main.f9a46375.js.map": "/W3Schools_clone_react/static/js/main.f9a46375.js.map",
     "787.b82d521d.chunk.js.map": "/W3Schools_clone_react/static/js/787.b82d521d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9c14869a.css",
-    "static/js/main.e35b792c.js"
+    "static/css/main.a52fecc6.css",
+    "static/js/main.f9a46375.js"
   ]
 }
