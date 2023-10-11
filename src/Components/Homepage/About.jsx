@@ -3,7 +3,7 @@ import React from 'react'
 const About = () => {
     return (
         <>
-            <div className='bg-[url("https://www.w3schools.com/images/background_in_space.gif")] h-[69vh] relative'>
+            <div className='bg-[url("https://www.w3schools.com/images/background_in_space.gif")] h-[69vh] relative w-full'>
                 <div className='flex w-[95%] md:w-[70%] lg:w-[50%] m-auto flex-col gap-6 items-center justify-center pt-24'>
                     <p className='text-white font-bold text-[50px] sm:text-[70px] text-center'>Learn to Code</p>
                     <p className='text-[#fff4a3] text-xl font-bold text-center'>With the world's largest web developer site.</p>

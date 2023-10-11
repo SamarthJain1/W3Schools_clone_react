@@ -7,7 +7,7 @@ import Box3 from "./Box/Box3";
 import Box5 from "./Box/Box5";
 import Top from './Box/Top';
 import End from './Box/End';
-import Footer from "./../Homepage/Footer";
+import Footer from "../Homepage/Footer";
 import { dataInfo } from '../../Data';
 import Soon from "./Box/Soon"
 
