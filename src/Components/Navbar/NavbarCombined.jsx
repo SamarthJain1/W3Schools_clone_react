@@ -4,8 +4,8 @@ import Navbar2 from './Navbar2'
 const NavbarCombined = () => {
   return (
     <div>
-        <Navbar1/>
-        <Navbar2/>
+      <Navbar1 />
+      <Navbar2 />
     </div>
   )
 }

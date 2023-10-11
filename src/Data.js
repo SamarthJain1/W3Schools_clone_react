@@ -2018,6 +2018,5 @@ export const dataInfo = [
 
         ]
     },
-    
 ];
 

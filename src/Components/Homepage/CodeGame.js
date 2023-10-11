@@ -7,7 +7,7 @@ export default function CodeGame() {
         <div style={{fontFamily:['Freckle Face','cursive']}} className='text-[48px]'>Code Game</div>
         <div style={{fontFamily:['Freckle Face','cursive']}} className='text-[32px] m-[10px] sm:text-[25px]'>Help the Lynx collect pine cones!</div>
         <div>
-            <img src='https://www.w3schools.com/images/w3lynx_200.png' className='m-[16px]'></img>
+            <img src='https://www.w3schools.com/images/w3lynx_200.png' className='m-[16px]' alt=""></img>
         </div>
         <div>
             <button className='w-[200px] h-[52px] text-white text-[21px] font-bold bg-[#282A35] rounded-3xl sm:text-[18px]'>Play Game</button>

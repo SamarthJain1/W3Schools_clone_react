@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import Navbar1 from "../../Navbar/Navbar1";
-import Navbar2 from "../../Navbar/Navbar2";
 export default function SignUpLink() {
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 768);
 
@@ -16,7 +14,7 @@ export default function SignUpLink() {
   }, []);
   return (
     <div>
-   
+
       <div
         style={{ fontFamily: ["Source Sans Pro", "sans-serif"] }}
         className="signUp text-center pt-20"

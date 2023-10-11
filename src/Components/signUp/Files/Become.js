@@ -9,7 +9,7 @@ export default function Become() {
       >
         <div className="flex flex-col justify-center items-center text-center pt-20">
           <div className="">
-            <img src="https://www.w3schools.com/signup/lynxlogo.svg"></img>
+            <img src="https://www.w3schools.com/signup/lynxlogo.svg" alt=""></img>
           </div>
           <div className="text-[25px] lg:text-[32px] font-extrabold mt-[3%]">
             Become a W3Schooler
@@ -18,7 +18,7 @@ export default function Become() {
             <b className="font-extrabold">Learn</b> with proven training
             materials used by millions
           </div>
-          <div className="text-[15px] ml-[10%] mr-[10%] lg:text-[21px] text-center font-semibold mt-[3%] ml-[30%] mr-[25%]">
+          <div className="text-[15px] ml-[10%] mr-[10%] lg:text-[21px] text-center font-semibold mt-[3%]">
             We have been helping people learn to code for over 23 years. Start
             learning with our constantly updated and improved learning material.
             Join our online community and get started today!

@@ -3,15 +3,11 @@ import "../../App.css";
 import { useLocation, NavLink } from 'react-router-dom';
 
 const Navbar = () => {
-    const links = ["HTML", "CSS", "JAVASCRIPT", "BOOTSTRAP", "REACT", "MongoDB"];
+    const links = ["HTML", "CSS", "JAVASCRIPT", "BOOTSTRAP", "REACT", "MongoDB", "PYTHON", "MYSQL", "JQUERY", "EXCEL", "XML", "DJANGO", "TYPESCRIPT", "ANGULAR", "GIT", "POSTGRESQL", "ASP", "AWS", "KOTLIN", "SASS", "VUE", "CYBERSECURITY"];
     const location = useLocation();
 
     const isActiveFunc = (currentPath, intendedPath) => {
         return currentPath.includes(intendedPath);
-    };
-
-    const getPath = (link) => {
-        return `/${link.toLowerCase()}/home`;
     };
 
     return (

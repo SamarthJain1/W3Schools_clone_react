@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useParams } from 'react-router-dom'
 import SignUpLink from './Files/SignUpLink'
 import Acheivement from './Files/Acheivement'
 import PublicProfile from './Files/PublicProfile'
@@ -14,9 +15,15 @@ import NavbarCombined from '../Navbar/NavbarCombined'
 
 
 export default function SignUpPage() {
+
+  const { section, pageName } = useParams();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [section, pageName]);
   return (
     <>
-     <NavbarCombined/>
+      <NavbarCombined />
       <div className='pt-[94px]'>
         <SignUpLink />
         <Become />

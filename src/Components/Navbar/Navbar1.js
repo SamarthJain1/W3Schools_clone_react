@@ -10,20 +10,14 @@ export default function Navbar1() {
 
     return (
         <>
-         
+
             <div className="flex justify-between fixed bg-white w-full z-50">
                 <div className="flex gap-1 md:gap-2 lg:gap-1 xl:gap-5">
                     <a href="/" className="group">
-                        <img
-                            className="h-12 m-auto transition duration-300 ease-in-out group-hover:filter group-hover:brightness-75"
-                            src="https://www.w3schools.com/images/w3schools_logo_436_2.png"
-                            alt="logo"
-                        />
+                        <img className="h-12 m-auto transition duration-300 ease-in-out group-hover:filter group-hover:brightness-75" src="https://www.w3schools.com/images/w3schools_logo_436_2.png" alt="logo" />
                     </a>
-                    <button
-                        onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                        className="flex sm:hidden justify-center items-center gap-1 py-3 xl:py-4 px-2 hover:bg-[#04aa6d] hover:text-white"
-                    >
+                    <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                        className="flex sm:hidden justify-center items-center gap-1 py-3 xl:py-4 px-2 hover:bg-[#04aa6d] hover:text-white">
                         Menu
                         <AiFillCaretDown style={{ fontSize: 12 }} />
                     </button>
@@ -37,45 +31,29 @@ export default function Navbar1() {
                         </div>
                     )}
 
-                    <a
-                        href="/"
-                        className="hidden sm:flex justify-center items-center gap-1 py-3 xl:py-4 px-2 hover:bg-[#04aa6d]  hover:text-white"
-                    >
+                    <a href="/" className="hidden sm:flex justify-center items-center gap-1 py-3 xl:py-4 px-2 hover:bg-[#04aa6d]  hover:text-white">
                         Tutorials
                         <AiFillCaretDown style={{ fontSize: 12 }} />
                     </a>
 
-                    <a
-                        href="/"
-                        className="hidden sm:flex justify-center items-center gap-1 py-3 xl:py-4 px-2 hover:bg-[#04aa6d] hover:text-white"
-                    >
+                    <a href="/" className="hidden sm:flex justify-center items-center gap-1 py-3 xl:py-4 px-2 hover:bg-[#04aa6d] hover:text-white">
                         Exercises
                         <AiFillCaretDown style={{ fontSize: 12 }} />
                     </a>
 
-                    <a
-                        href="/"
-                        className="hidden lg:flex justify-center items-center gap-1 py-3 xl:py-4 px-2 hover:bg-[#04aa6d] hover:text-white"
-                    >
+                    <a href="/" className="hidden lg:flex justify-center items-center gap-1 py-3 xl:py-4 px-2 hover:bg-[#04aa6d] hover:text-white">
                         <p>Get Certified</p>
                         <AiFillCaretDown style={{ fontSize: 12 }} />
                     </a>
 
-                    <a
-                        href="/"
-                        className="hidden md:flex justify-center items-center gap-1 py-3 xl:py-4 px-2 hover:bg-[#04aa6d] hover:text-white"
-                    >
+                    <a href="/" className="hidden md:flex justify-center items-center gap-1 py-3 xl:py-4 px-2 hover:bg-[#04aa6d] hover:text-white">
                         Services
                         <AiFillCaretDown className="gap-10 md:gap-2" style={{ fontSize: 12 }} />
                     </a>
 
                     <div className="flex items-center justify-center">
                         <div>
-                            <input
-                                className="hidden text-[12px] min-[850px]:block border-2 py-1 px-4 lg:w-[80%] xl:w-[100%]  text-lg rounded-3xl"
-                                type="text"
-                                placeholder="Search..."
-                            />
+                            <input className="hidden text-[12px] min-[850px]:block border-2 py-1 px-4 lg:w-[80%] xl:w-[100%]  text-lg rounded-3xl" type="text" placeholder="Search..." />
                         </div>
                         <div>
                             <BsSearch className="lg:ml-[-75px] md:ml-[-30px] xl:ml-[-25px]" />
@@ -97,7 +75,7 @@ export default function Navbar1() {
                             <Link to="/signup">Sign Up</Link>
                         </div>
                         <div className="text-black flex items-center justify-center min-[600px]:w-1/2">
-                         <Link to={'/login'}><button>Login</button></Link>
+                            <Link to={'/login'}> <button>Login</button></Link>
                         </div>
                     </div>
                 </div>

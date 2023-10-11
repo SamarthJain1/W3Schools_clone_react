@@ -13,17 +13,17 @@ export default function ProCaption() {
         <div className="text-white mt-5 flex flex-col justify-start items-start">
           <p className="flex justify-center items-center gap-2 text-[18px] leading-[25px] font-bold p-4 ">
             <div>
-              <img src="https://www.w3schools.com/spaces/files/check3.db67d31e.svg" />
+              <img src="https://www.w3schools.com/spaces/files/check3.db67d31e.svg" alt=""/>
             </div>
             <div>Browse W3Schools without ads</div>
           </p>
           <p className="flex justify-center items-center  gap-2 text-[18px] leading-[16px] font-bold p-4 ">
             <div>
-              <img src="https://www.w3schools.com/spaces/files/check3.db67d31e.svg" />
+              <img src="https://www.w3schools.com/spaces/files/check3.db67d31e.svg" alt=""/>
             </div>
             <div>
               Website hosting(Includes <a
-                href=""
+                href="/"
                 className="underline underline-offset-3 hover:text-green-400"
               >
                 Spaces
@@ -32,11 +32,11 @@ export default function ProCaption() {
           </p>
           <p className="flex justify-center items-center gap-2 text-[18px] leading-[16px] font-bold p-4 ">
             <div>
-              <img src="https://www.w3schools.com/spaces/files/check3.db67d31e.svg" />
+              <img src="https://www.w3schools.com/spaces/files/check3.db67d31e.svg" alt=""/>
             </div>
             <div>
               Access to our <a
-                href=""
+                href="/"
                 className="underline underline-offset-3 hover:text-green-400"
               >
                 HTML Video Tutorial

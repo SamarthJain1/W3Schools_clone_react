@@ -3,7 +3,7 @@ import "../../App.css";
 import { useLocation, NavLink } from 'react-router-dom';
 
 const Navbar2 = () => {
-    const links = ["HTML", "CSS", "JAVASCRIPT", "BOOTSTRAP", "REACT", "MongoDB"];
+    const links = ["HTML", "CSS", "JAVASCRIPT", "BOOTSTRAP", "REACT", "MongoDB", "PYTHON", "MYSQL", "JQUERY", "EXCEL", "XML", "DJANGO", "TYPESCRIPT", "ANGULAR", "GIT", "POSTGRESQL", "ASP", "AWS", "KOTLIN", "SASS", "VUE", "CYBERSECURITY"];
     const location = useLocation();
 
     const isActiveFunc = (currentPath, intendedPath) => {
@@ -20,7 +20,7 @@ const Navbar2 = () => {
                 <NavLink
                     key={index}
                     to={getPath(link)}
-                    className={`inline-block ${isActiveFunc(location.pathname, link.toLowerCase()) ? 'bg-[#04aa6d] text-white' : 'hover:bg-[#cccccc]'} py-2 px-2`}>
+                    className={`inline-block ${isActiveFunc(location.pathname, link.toLowerCase()) ? 'bg-[#04aa6d] text-white' : 'hover:bg-[#cccccc]'} py-2 px-4`}>
                     {link}
                 </NavLink>
             ))}

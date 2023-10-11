@@ -6,7 +6,6 @@ const Sidepanel = () => {
     const location = useLocation();
     const currentSection = location.pathname.split('/')[1];
 
-    // Get links relevant to the current section
     const sectionLinks = dataInfo.filter(entry => entry.section.toLowerCase() === currentSection);
 
     return (
