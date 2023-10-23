@@ -11,8 +11,8 @@ import { StarPoints } from "./assets";
 const UserProfile = (props) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   return (
-    <div className="w-full">
-      <div className="flex justify-between fixed bg-white w-full z-50">
+    <div className="w-full overflow-x-hidden">
+      <div className="flex justify-between fixed bg-white w-full z-50 pb-[2rem]">
         <div className="flex gap-1 md:gap-2 lg:gap-1 xl:gap-5 ">
           <a href="/" className="group">
             <img
@@ -119,44 +119,46 @@ const UserProfile = (props) => {
           color: "#282a35",
           fontStyle: "normal",
         }}
-        className="md:p-8 p-2 md:mx-[2.5rem] mx-0 "
+        className="md:p-8 p-2 md:mx-[2.5rem] mx-0 w-full md:flex"
       >
-        <h1 className="styledText flex spacing-7 mt-[11rem] leading-[45px]">
-          My Learning
-        </h1>
-        <div className="BoxConatiner w-full md:p-8 p-4 rounded-3xl border-[1px] border-[#dee2e6] mt-[3rem] relative">
-          <div className="md:flex relative">
-            <div className="relative z-10">
-              <h1 className="userName text-[1.9rem] leading-7 text-left font-normal">
-                Hi, {`${props.name}`}
-              </h1>
-              <div className="text-[18px] font-light md:w-2/3 w-full mt-3">
-                {userData.MyLearningContent}
+        <div className="md:p-0 p-6">
+          <h1 className="styledText md:w-2/3 flex spacing-7 mt-[11rem] leading-[45px]">
+            My Learning
+          </h1>
+          <div className="BoxConatiner w-full rounded-3xl  mt-[3rem] relative">
+            <div className="md:flex relative">
+              <div className="relative z-10">
+                <h1 className="userName text-[1.9rem] leading-7 text-left font-normal">
+                  Hi, {`${props.name}`}
+                </h1>
+                <div className="md:text-[18px] text-[16px] font-light md:w-11/12 w-full mt-3">
+                  {userData.MyLearningContent}
+                </div>
+                <div className="text-[18px] font-light mt-3">
+                  {userData.Note}
+                </div>
+                <div className="buttonFlex flex  w-full mt-5 p-0">
+                  <Link to={"/certification"} className="md:text-[18px] flex justify-center  text-[12px] font-semibold bg-[#282a35] mx-0 text-white p-3 rounded-3xl xl:w-2/3 w-full mt-3">
+                    {" "}
+                    <button >
+                      {userData.MyLearningButton1}
+                    </button>
+                  </Link>
+                  <Link to={"/certification"} className="md:text-[18px]  text-[12px] xl:w-1/2 w-full mx-0  mt-3 hover:underline font-semibold flex justify-center"> 
+                    {" "}
+                    <button >
+                      {userData.MyLearningButton2}
+                    </button>
+                  </Link>
+                </div>
               </div>
-              <div className="text-[18px] font-light mt-3">{userData.Note}</div>
-              <div className="buttonFlex flex lg:w-2/3 w-full mt-5">
-                <button className="text-[18px] font-semibold bg-[#282a35] mx-0 text-white p-3 rounded-3xl xl:w-1/2 w-full mt-3">
-                  {userData.MyLearningButton1}
-                </button>
-                <button className="text-[18px] xl:w-1/2 w-full mx-0  mt-3 hover:underline font-semibold">
-                  {userData.MyLearningButton2}
-                </button>
+              <div className=" md:w-1/2 w-full flex justify-center items-center ">
+                <img className="md:mt-0 mt-[3rem]" src={StarPoints} alt="" />
               </div>
-            </div>
-            <div className="absolute lg:right-[5rem] lg:-top-[7rem] lg:right-[2rem] lg:-top-[7rem] h-full">
-              <img
-                className="relative"
-                src={StarPoints}
-              
-                alt=""
-              />
             </div>
           </div>
         </div>
       </div>
-     <Link to={'/certification'}> <button >payment</button></Link>
-       
-      
     </div>
   );
 };
