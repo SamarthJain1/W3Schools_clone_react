@@ -147,3 +147,10 @@ export const dataRecognized = [
     linksEmbedded:"https://www.w3schools.com/mongodb/showmongodb.php?filename=demo_aggregations_intro"
   },
 ];
+
+export const userData ={
+  MyLearningContent : "Welcome to the new My learning here at W3schools. This will be your hub to all the tutorials we offer and your learning progress.",
+  Note:"We hope you will continue to learn with us.",
+  MyLearningButton1 :'Continue "Learn HTML"',
+  MyLearningButton2 :"Browse tutorials",
+}

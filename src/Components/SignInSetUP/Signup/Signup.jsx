@@ -16,6 +16,7 @@ function Signup() {
   const [subscribe, setSubscribe] = useState(false);
   const [submitButtonDisabled, setSubmitButtonDisabled] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
+  const [userDisplayName, setUserDisplayName] = useState(""); 
   const [passwordValidation, setPasswordValidation] = useState({
 
     lowercase: false,
@@ -103,7 +104,7 @@ function Signup() {
         await updateProfile(user, {
           displayName: values.name,
         });
-
+        setUserDisplayName(values.name); 
         navigate("/entry");
       })
       .catch((err) => {

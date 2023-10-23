@@ -1,19 +1,18 @@
-import React, { useEffect, useState } from 'react';
+import React, {useState } from 'react';
 import { AiFillCaretDown } from "react-icons/ai";
 import { BsSearch } from "react-icons/bs";
 import { BiCodeAlt } from "react-icons/bi";
-import { CgShoppingCart } from "react-icons/cg";
 import { Link } from 'react-router-dom';
 import Navbar2 from './Navbar2';
 
-export default function LoggedInNavbar(props) {
+export default function UserNavbar(props) {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
    
     return (
         <>
 
             <div className="flex justify-between fixed bg-white w-full z-50">
-                <div className="flex gap-1 md:gap-2 lg:gap-1 xl:gap-5">
+                <div className="flex gap-1 md:gap-2 lg:gap-1 xl:gap-5 ">
                     <a href="/" className="group">
                         <img className="h-12 m-auto transition duration-300 ease-in-out group-hover:filter group-hover:brightness-75" src="https://www.w3schools.com/images/w3schools_logo_436_2.png" alt="logo" />
                     </a>
@@ -67,11 +66,7 @@ export default function LoggedInNavbar(props) {
                         <BiCodeAlt className="w-5 h-5 text-[#9763f6]" />
                         <span>Spaces</span>
                     </div>
-                    <div className="hidden xl:flex justify-center items-center gap-1">
-                        <CgShoppingCart className="w-5 h-5 text-[#9763f6]" />
-                        <span>Certificates</span>
-
-                    </div>
+                   
                    
                     <Link  className='flex items-center' to={'/userprofile'}><button>Welcome : {`${props.name}`}</button></Link>
 

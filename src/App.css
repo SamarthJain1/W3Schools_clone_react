@@ -2,7 +2,10 @@
     display: none;
     /* for Chrome, Safari, and Opera */
 }
-
+.styledText,
+.userName{
+    font-family: 'Source Sans 3', sans-serif;
+}
 .hide-scrollbar {
     -ms-overflow-style: none;
     /* for Internet Explorer and Edge */
