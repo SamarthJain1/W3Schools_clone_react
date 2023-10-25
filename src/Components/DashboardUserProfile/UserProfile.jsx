@@ -121,7 +121,7 @@ const UserProfile = (props) => {
         }}
         className="md:p-8 p-2 md:mx-[2.5rem] mx-0 w-full md:flex"
       >
-        <div className="md:p-0 p-6">
+        <div className="md:p-0">
           <h1 className="styledText md:w-2/3 flex spacing-7 mt-[11rem] leading-[45px]">
             My Learning
           </h1>
@@ -138,22 +138,257 @@ const UserProfile = (props) => {
                   {userData.Note}
                 </div>
                 <div className="buttonFlex flex  w-full mt-5 p-0">
-                  <Link to={"/certification"} className="md:text-[18px] flex justify-center  text-[12px] font-semibold bg-[#282a35] mx-0 text-white p-3 rounded-3xl xl:w-2/3 w-full mt-3">
+                  <Link
+                    to={"/certification"}
+                    className="md:text-[18px] flex justify-center  text-[12px] font-semibold bg-[#282a35] mx-0 text-white p-3 rounded-3xl xl:w-2/3 w-full mt-3"
+                  >
                     {" "}
-                    <button >
-                      {userData.MyLearningButton1}
-                    </button>
+                    <button>{userData.MyLearningButton1}</button>
                   </Link>
-                  <Link to={"/certification"} className="md:text-[18px]  text-[12px] xl:w-1/2 w-full mx-0  mt-3 hover:underline font-semibold flex justify-center"> 
+                  <Link
+                    to={"/certification"}
+                    className="md:text-[18px]  text-[12px] xl:w-1/2 w-full mx-0  mt-3 hover:underline font-semibold flex justify-center"
+                  >
                     {" "}
-                    <button >
-                      {userData.MyLearningButton2}
-                    </button>
+                    <button>{userData.MyLearningButton2}</button>
                   </Link>
                 </div>
               </div>
               <div className=" md:w-1/2 w-full flex justify-center items-center ">
                 <img className="md:mt-0 mt-[3rem]" src={StarPoints} alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className=" bg-[#fafafa] w-full">
+        <div className="ProgressMarked bg-[#fafafa] mt-8 md:p-6 p-0 pl-9 flex justify-between md:w-[50%] w-full">
+          <h1 className="text-4xl">In Progress</h1>
+          <h1>Show all in progress</h1>
+        </div>
+        <div className="flex md:p-8 p-2">
+          <div className="grid md:grid-cols-3 grid-cols-2 gap-10 ">
+            <div className="card1 bg-white w-[15rem] rounded-2xl ">
+              <div className="flex justify-center items-center border-[1px] border-[#fafafa] mt-8">
+                <div>
+                  <img
+                    src="https://my-learning.w3schools.com/tutorial-logos/react.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <p className="text-[10px] mt-3 ml-5">Tutorial</p>
+              <p className="mt-3 ml-5 cursor-pointer font-semibold">
+                Learn HTML
+              </p>
+              <p className="font-semibold  ml-5 text-[12px]">
+                23 of 35 lessons Completed
+              </p>
+              <div className="p-4">
+                <div className="float-right mx-5 text-2xl mb-[2rem]">63%</div>
+                <div
+                  className="w-full  h-[9px] rounded-3xl mx-auto mb-8 mt-8"
+                  style={{ border: "2px solid black" }}
+                >
+                  <div className="bg-black w-[63%] h-[6px]"></div>
+                </div>
+              </div>
+            </div>
+
+            <div className="card1 bg-white w-[15rem] rounded-2xl ">
+              <div className="flex justify-center items-center border-[1px] border-[#fafafa] mt-8">
+                <div>
+                  <img
+                    src="https://my-learning.w3schools.com/tutorial-logos/html.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <p className="text-[10px] mt-3 ml-5">Tutorial</p>
+              <p className="mt-3 ml-5  cursor-pointer font-semibold">
+                Learn React
+              </p>
+
+              <p className="font-semibold ml-5 text-[12px]">
+                56 of 74 lessons Completed
+              </p>
+              <div className="p-4">
+                <div className="float-right mx-5 text-2xl mb-[2rem]">85%</div>
+                <div
+                  className="w-full  h-[9px] rounded-3xl mx-auto mb-8 mt-8"
+                  style={{ border: "2px solid black" }}
+                >
+                  <div className="bg-black w-[85%] h-[6px]"></div>
+                </div>
+              </div>
+            </div>
+            {/* <img src="https://my-learning.w3schools.com/tutorial-logos/html.svg" alt="" /> */}
+
+            <div className="card1 ">
+              <p className="font-semibold">
+                Tip Collect stars Read all the lessons in a tutorial, and get a
+                star. Score 100% on the quiz in a tutorial, and get a star.
+                Complete all the exercises in a tutorial, and get another star.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h1 className="text-3xl p-6">More Tutorials</h1>
+      </div>
+      <div className="flex gap-10 bg-[fafafa]">
+        <div className="grid md:grid-cols-3 grid-cols-1 w-full p-8">
+          <div className="card1 bg-white w-[15rem] rounded-2xl">
+            <div className="flex justify-center items-center border-[1px] border-[#fafafa] mt-8">
+              <div>
+                <img
+                  src="https://my-learning.w3schools.com/tutorial-logos/fallback.svg"
+                  alt="TypeScript"
+                />
+              </div>
+            </div>
+            <p className="text-[10px] mt-3 ml-5">TypeScript</p>
+            <p className="mt-3 ml-5 cursor-pointer font-semibold">
+              Learn TypeScript
+            </p>
+            <p className="font-semibold ml-5 text-[12px]">
+              30 of 50 lessons Completed
+            </p>
+            <div className="p-4">
+              <div className="float-right   mx-5 text-2xl mb-[2rem]">75%</div>
+              <div
+                className="w-full h-[9px] bg-transparent  rounded-3xl mx-auto mb-8 mt-8"
+                style={{ border: "2px solid black" }}
+              >
+                <div className="bg-black w-75% h-[6px]"></div>
+              </div>
+            </div>
+          </div>
+
+          <div className="card1 bg-white w-[15rem] rounded-2xl">
+            <div className="flex justify-center items-center border-[1px] border-[#fafafa] mt-8">
+              <div>
+                <img
+                  src="https://my-learning.w3schools.com/tutorial-logos/fallback.svg"
+                  alt="Web Development"
+                />
+              </div>
+            </div>
+            <p className="text-[10px] mt-3 ml-5">Web Development</p>
+            <p className="mt-3 ml-5 cursor-pointer font-semibold">
+              Learn Web Development
+            </p>
+            <p className="font-semibold ml-5 text-[12px]">
+              45 of 60 lessons Completed
+            </p>
+            <div className="p-4">
+              <div className="float-right bg-transparent  mx-5 text-2xl mb-[2rem]">75%</div>
+              <div
+                className="w-full h-[9px]  bg-transparent  rounded-3xl mx-auto mb-8 mt-8"
+                style={{ border: "2px solid black" }}
+              >
+                <div className="bg-black w-75% h-[6px]"></div>
+              </div>
+            </div>
+          </div>
+
+          <div className="card1 bg-white w-[15rem] rounded-2xl">
+            <div className="flex justify-center items-center border-[1px] border-[#fafafa] mt-8">
+              <div>
+                <img src="https://my-learning.w3schools.com/tutorial-logos/fallback.svg" alt="Vue.js" />
+              </div>
+            </div>
+            <p className="text-[10px] mt-3 ml-5">Vue.js</p>
+            <p className="mt-3 ml-5 cursor-pointer font-semibold">
+              Learn Vue.js
+            </p>
+            <p className="font-semibold ml-5 text-[12px]">
+              20 of 40 lessons Completed
+            </p>
+            <div className="p-4">
+              <div className="float-right mx-5 text-2xl mb-[2rem]">50%</div>
+              <div
+                className="w-full  bg-transparent  h-[9px] rounded-3xl mx-auto mb-8 mt-8"
+                style={{ border: "2px solid black" }}
+              >
+                <div className="bg-black w-50% h-[6px]"></div>
+              </div>
+            </div>
+          </div>
+
+          <div className="card1 bg-white w-[15rem] rounded-2xl">
+            <div className="flex justify-center items-center border-[1px] border-[#fafafa] mt-8">
+              <div>
+                <img
+                  src="https://my-learning.w3schools.com/tutorial-logos/fallback.svg"
+                  alt="JavaScript"
+                />
+              </div>
+            </div>
+            <p className="text-[10px] mt-3 ml-5">JavaScript</p>
+            <p className="mt-3 ml-5 cursor-pointer font-semibold">
+              Learn JavaScript
+            </p>
+            <p className="font-semibold ml-5 text-[12px]">
+              25 of 35 lessons Completed
+            </p>
+            <div className="p-4">
+              <div className="float-right mx-5 text-2xl mb-[2rem]">71.43%</div>
+              <div
+                className="w-full bg-transparent  h-[9px] rounded-3xl mx-auto mb-8 mt-8"
+                style={{ border: "2px solid black" }}
+              >
+                <div className="bg-black w-71.43% h-[6px]"></div>
+              </div>
+            </div>
+          </div>
+
+          <div className="card1 bg-white w-[15rem] rounded-2xl">
+            <div className="flex justify-center items-center border-[1px] border-[#fafafa] mt-8">
+              <div>
+                <img src="https://my-learning.w3schools.com/tutorial-logos/css.svg" alt="CSS" />
+              </div>
+            </div>
+            <p className="text-[10px] mt-3 ml-5">CSS</p>
+            <p className="mt-3 ml-5 cursor-pointer font-semibold">Learn CSS</p>
+            <p className="font-semibold ml-5 text-[12px]">
+              15 of 25 lessons Completed
+            </p>
+            <div className="p-4">
+              <div className="float-right mx-5 text-2xl mb-[2rem]">60%</div>
+              <div
+                className="w-full h-[9px]  bg-transparent  rounded-3xl mx-auto mb-8 mt-8"
+                style={{ border: "2px solid black" }}
+              >
+                <div className="bg-black w-60% h-[6px]"></div>
+              </div>
+            </div>
+          </div>
+
+          <div className="card1 bg-white w-[15rem] rounded-2xl">
+            <div className="flex justify-center items-center border-[1px] border-[#fafafa] mt-8">
+              <div>
+                <img
+                  src="https://my-learning.w3schools.com/tutorial-logos/js.svg"
+                  alt="JavaScript"
+                />
+              </div>
+            </div>
+            <p className="text-[10px] mt-3 ml-5">JavaScript</p>
+            <p className="mt-3 ml-5 cursor-pointer font-semibold">
+              Learn JavaScript
+            </p>
+            <p className="font-semibold ml-5 text-[12px]">
+              X of Y lessons Completed
+            </p>
+            <div className="p-4">
+              <div className="float-right mx-5 text-2xl mb-[2rem]">40%</div>
+              <div
+                className="w-full h-[9px] rounded-3xl bg-transparent mx-auto mb-8 mt-8"
+                style={{ border: "2px solid black" }}
+              >
+                <div className="bg-black w-[40%] h-[6px]"></div>
               </div>
             </div>
           </div>

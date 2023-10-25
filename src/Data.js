@@ -785,6 +785,2223 @@ export const dataInfo = [
         ]
     },
 
+    {
+        section: "HTML",
+        page_name: "Styles",
+        components: [
+            {
+                name: "Box2",
+                props: {
+                    head: "HTML Styles",
+                    info: ["The HTML style attribute is used to add styles to an element, such as color, font, size, and more."],
+                    code: ["I am Red",
+                        "I am Blue",
+                        "I am Big",
+                    ],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_styles_intro",
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: "The HTML Style Attribute",
+                    info: ["Setting the style of an HTML element, can be done with the style attribute.",
+                        "The HTML style attribute has the following syntax:"
+                    ],
+                    code: [`<tagname style="property:value;">`],
+                }
+            },
+            {
+                name: "Box5",
+                props: {
+                    info: "You will learn more about CSS later in this tutorial.",
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: "Background Color",
+                    info: ["The CSS background-color property defines the background color for an HTML element."],
+                    example_info: ["Set the background color for a page to powderblue:"],
+                    code: [`<body style="background-color:powderblue;">`,
+                        "<h1>This is a heading</h1>",
+                        "<p>This is a paragraph.</p>",
+                        "</body>"
+                    ],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_styles_background-color"
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    example_info: ["Set background color for two different elements:"],
+                    code: ["<body>",
+                        `<h1 style="background-color:powderblue;">This is a heading</h1>`,
+                        `<p style="background-color:tomato;">This is a paragraph.</p>`,
+                        "</body>"
+                    ],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_styles_background-color2",
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: "Text Color",
+                    info: ["The CSS color property defines the text color for an HTML element:"],
+                    code: [`<h1 style="color:blue;">This is a heading</h1>
+                    <p style="color:red;">This is a paragraph.</p>
+                    `],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_styles_color"
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: "Fonts",
+                    info: ["The CSS font-family property defines the font to be used for an HTML element:"],
+                    code: [`<h1 style="font-family:verdana;">This is a heading</h1>`,
+                        `<p style="font-family:courier;">This is a paragraph.</p>`
+                    ],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_styles_font-family"
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: "Text Size",
+                    info: ["The CSS font-size property defines the text size for an HTML element:"],
+                    code: [`<h1 style="font-size:300%;">This is a heading</h1>
+                    <p style="font-size:160%;">This is a paragraph.</p>`],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_styles_color",
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: "Text Alignment",
+                    info: ["The CSS text-align property defines the horizontal text alignment for an HTML element:"],
+                    code: [`<h1 style="text-align:center;">Centered Heading</h1>
+                    <p style="text-align:center;">Centered paragraph.</p>
+                    `],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_styles_color",
+                }
+            },
+            {
+                name: "Box3",
+                props: {
+                    title: "Chapter Summary",
+                    links: [
+                        <>Use the <span className='red_grey'>style</span> attribute for styling HTML elements</>,
+                        <>Use <span className='red_grey'>background-color</span> for background color</>,
+                        <>Use <span className='red_grey'>color</span> for text colors</>,
+                        <>Use <span className='red_grey'>font-family</span> for text fonts</>,
+                        <>Use <span className='red_grey'>font-size</span> for text sizes</>,
+                        <>Use <span className='red_grey'>text-align</span> for text alignment</>
+                    ],
+
+                }
+            },
+        ]
+
+    },
+    {
+        section: "HTML",
+        page_name: "Formating",
+        components: [
+            {
+                name: "Box2",
+                props: {
+                    head: "HTML Text Formatting",
+                    info: ["HTML contains several elements for defining text with a special meaning."],
+                    code: [`This text is bold
+                    This text is italic
+                    This is subscript and superscript`],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_intro",
+                }
+            },
+            {
+                name: "Box3",
+                props: {
+                    title: "HTML Formatting Elements",
+                    info: ["Formatting elements were designed to display special types of text:"],
+                    links: [
+                        <><span className='red_grey'>&lt;b&gt;</span> for bold text</>,
+                        <><span className='red_grey'>&lt;strong&gt;</span> for important text</>,
+                        <><span className='red_grey'>&lt;i&gt;</span> for italic text</>,
+                        <><span className='red_grey'>&lt;em&gt;</span> for emphasized text</>,
+                        <><span className='red_grey'>&lt;mark&gt;</span> for marked text</>,
+                        <><span className='red_grey'>&lt;small&gt;</span> for smaller text</>,
+                        <><span className='red_grey'>&lt;del&gt;</span> for deleted text</>,
+                        <><span className='red_grey'>&lt;ins&gt;</span> for inserted text</>,
+                        <><span className='red_grey'>&lt;sub&gt;</span> for subscript text</>,
+                        <><span className='red_grey'>&lt;sup&gt;</span> for superscript text</>
+                    ]
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: "HTML <b> and <strong> Elements",
+                    info: ["The HTML <b> element defines bold text, without any extra importance."],
+                    code: ["<b>This text is bold</b>"],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_b",
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    info: ["The HTML <strong> element defines text with strong importance. The content inside is typically displayed in bold."],
+                    code: ["<strong>This text is important!</strong>"],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_strong"
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: "HTML <i> and <em> Elements",
+                    info: ["The HTML <i> element defines a part of text in an alternate voice or mood. The content inside is typically displayed in italic.",
+                        "Tip: The <i> tag is often used to indicate a technical term, a phrase from another language, a thought, a ship name, etc."
+                    ],
+                    code: ["<i>This text is italic</i"],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_i",
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    info: ["The HTML <em> element defines emphasized text. The content inside is typically displayed in italic.",
+                        "Tip: A screen reader will pronounce the words in <em> with an emphasis, using verbal stress."
+                    ],
+                    code: ["<i>This text is italic</i"],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_i",
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: "HTML <small> Element",
+                    info: ["The HTML <small> element defines smaller text:"],
+                    code: ["<small>This text is small</small>"],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_i",
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: "HTML <ins> Element",
+                    info: ["The HTML <ins> element defines a text that has been inserted into a document. Browsers will usually underline inserted text:"],
+                    code: ["<p>My favorite color is <del>blue</del> <ins>red</ins>.</p>"],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_sub"
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: "HTML <sub> Element",
+                    info: ["The HTML <sub> element defines subscript text. Subscript text appears half a character below the normal line, and is sometimes rendered in a smaller font. Subscript text can be used for chemical formulas, like H2O:"],
+                    code: [`<p>This is <sub>subscripted</sub> text.</p>`],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_sub"
+                }
+            }
+        ]
+    },
+
+
+    //copy pasted from above section 2 starts 
+    //
+    //
+    {
+        section: "HTML",
+        page_name: "Quotations",
+        components: [
+            {
+                name: "Box1",
+                props: {
+                    head: "HTML Tutorial",
+                    info: [
+                        "HTML is the standard markup language for Web pages.",
+                        "With HTML you can create your own Website.",
+                        "HTML is easy to learn - You will enjoy it!"
+                    ],
+                    button_data: "Study our free HTML Tutorial"
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: `Easy Learning with HTML "Try it Yourself"`,
+                    info: "With our Try it Yourself editor, you can edit the HTML code and view the result:",
+                    code: [
+                        "<!DOCTYPE html>", "<html>", "<head>", "<title>Page Title</title>", "</head>", "<body>", "<h1>This is a Heading</h1>", "<p>This is a paragraph.</p>", "</body>", "</html>"
+                    ],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default",
+                    data: `Click on the "Try it Yourself" button to see how it works.`
+                }
+            },
+            {
+                name: "Box3",
+                props: {
+                    title: "HTML Examples",
+                    info: "In this HTML tutorial, you will find more than 200 examples. With our online Try it Yourself editor, you can edit and test each example yourself!"
+                }
+            },
+            {
+                name: "Box3",
+                props: {
+                    title: "My Learning",
+                    info: "Track your progress with the free My Learning program here at W3Schools. Log in to your account, and start earning points! This is an optional feature. You can study W3Schools without using My Learning.",
+                    img: true
+                }
+            },
+            {
+                name: "Box3",
+                props: {
+                    title: "HTML References",
+                    info: "At W3Schools you will find complete references about HTML elements, attributes, events, color names, entities, character-sets, URL encoding, language codes, HTTP messages, browser support, and more:"
+                }
+            },
+        ],
+
+    },
+    // html page 2
+    {
+        section: "HTML",
+        page_name: "Comments",
+        components: [
+            {
+                name: "Box3",
+                props: {
+                    head: "HTML Introduction",
+                    info: "HTML is the standard markup language for creating Web pages."
+                }
+            },
+            {
+                name: "Box3",
+                props: {
+                    title: "What is HTML?",
+                    links: [
+                        "HTML stands for Hyper Text Markup Language",
+                        "HTML is the standard markup language for creating Web pages",
+                        "HTML describes the structure of a Web page",
+                        "HTML consists of a series of elements",
+                        "HTML elements tell the browser how to display the content",
+                        "HTML elements label pieces of content such as 'this is a heading', 'this is a paragraph' 'this is a link'"
+                    ]
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: `A Simple HTML Document`,
+                    code: ["<!DOCTYPE html>", "<html>", "<head>", "<title>Page Title</title>", "</head>", "<body>", "<h1>My First Heading</h1>", "<p>My first paragraph.</p>", "</body>", "</html>"
+                    ],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_intro"
+                }
+            },
+            {
+                name: "Box3",
+                props: {
+                    title: "Example Explained",
+                    links: [
+                        <>The <span className='text-[#de143c] bg-[#f5f5f5] font-semibold'>&lt;!DOCTYPE html&gt;</span> declaration defines that this document is an HTML5 document</>,
+                        <>The <span className='text-[#de143c] bg-[#f5f5f5] font-semibold'>&lt;html&gt;</span> element is the root element of an HTML page</>,
+                        <>The <span className='text-[#de143c] bg-[#f5f5f5] font-semibold'>&lt;head&gt;</span> element contains meta information about the HTML page</>,
+                        <>The <span className='text-[#de143c] bg-[#f5f5f5] font-semibold'>&lt;title&gt;</span> element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)</>,
+                        <>The <span className='text-[#de143c] bg-[#f5f5f5] font-semibold'>&lt;body&gt;</span> element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.</>,
+                        <>The <span className='text-[#de143c] bg-[#f5f5f5] font-semibold'>&lt;h1&gt;</span> element defines a large heading</>,
+                        <>The <span className='text-[#de143c] bg-[#f5f5f5] font-semibold'>&lt;p&gt;</span> element defines a paragraph</>
+                    ]
+                }
+            },
+            {
+                name: "Box3",
+                props: {
+                    title: "What is an HTML Element?",
+                    info: [
+                        "An HTML element is defined by a start tag, some content, and an end tag: <tagname> Content goes here... </tagname>",
+                        "The HTML element is everything from the start tag to the end tag: <h1>My First Heading</h1><p>My first paragraph.</p>"
+                    ]
+                }
+            },
+            {
+                name: "Box3",
+                props: {
+                    title: "Web Browsers",
+                    info: [
+                        "The purpose of a web browser (Chrome, Edge, Firefox, Safari) is to read HTML documents and display them correctly.",
+                        "A browser does not display the HTML tags, but uses them to determine how to display the document"
+                    ],
+                    img: "https://www.w3schools.com/html/img_chrome.png"
+                }
+            },
+            {
+                name: "Box3",
+                props: {
+                    title: "HTML Page Structure",
+                    info: [
+                        "Below is a visualization of an HTML page structure:",
+                    ],
+                    img: image1,
+                    note: "The content inside the <body> section will be displayed in a browser. The content inside the <title> element will be shown in the browser's title bar or in the page's tab.",
+                    img_width: "100%"
+                }
+            },
+            {
+                name: "Box3",
+                props: {
+                    title: "HTML History",
+                    info: [
+                        "Since the early days of the World Wide Web, there have been many versions of HTML:",
+                        "This tutorial follows the latest HTML5 standard."
+                    ],
+                    img: image2,
+                    img_width: "100%"
+                }
+            },
+            {
+                name: "Box5",
+                props: {
+                    info: "This tutorial follows the latest HTML5 standard."
+                }
+            }
+        ]
+    },
+    // html page 3
+    {
+        section: "HTML",
+        page_name: "Colors",
+        components: [
+            {
+                name: "Box3",
+                props: {
+                    head: "HTML Editors",
+                    info: "A simple text editor is all you need to learn HTML."
+                }
+            },
+            {
+                name: "Box3",
+                props: {
+                    title: "WLearn HTML Using Notepad or TextEdit",
+                    info: [
+                        "Web pages can be created and modified by using professional HTML editors.",
+                        "However, for learning HTML we recommend a simple text editor like Notepad (PC) or TextEdit (Mac).",
+                        "We believe that using a simple text editor is a good way to learn HTML.",
+                        "Follow the steps below to create your first web page with Notepad or TextEdit.",
+                    ]
+                }
+            },
+            {
+                name: "Box3",
+                props: {
+                    title: "Step 1: Open Notepad (PC)",
+                    info: [
+                        <>Open <b>Finder &gt; Applications &gt; TextEdit</b></>,
+                        <>Also change some preferences to get the application to save files correctly. In <b>Preferences &gt; Format &gt;</b>choose<b> "Plain Text"</b></>,
+                        `Then under "Open and Save", check the box that says "Display HTML files as HTML code instead of formatted text".`,
+                        <><b>Then open a new document to place the code.</b></>,
+                    ]
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: `Step 2: Write Some HTML`,
+                    info: "Write or copy the following HTML code into Notepad:",
+                    code: ["<!DOCTYPE html>", "<html>", "<body>", "<h1>My First Heading</h1>", "<p>My first paragraph.</p>", "</body>", "</html>"
+                    ],
+                    imageSrc: "https://www.w3schools.com/html/img_notepad.png"
+                }
+            },
+            {
+                name: "Box3",
+                props: {
+                    title: "Step 3: Save the HTML Page",
+                    info: [
+                        <>Save the file on your computer. Select <b>File &gt; save as</b> in the NotePad menu</>,
+                        <>Name the file <b>"index.htm"</b> and set the encoding to <b>UTF-8</b> (which is the preferred encoding for HTML files).</>,
+                    ],
+                    img: "https://www.w3schools.com/html/img_saveas.png",
+                }
+            },
+            {
+                name: "Box5",
+                props: {
+                    info: <><b>Tip:</b> You can use either .htm or .html as file extension. There is no difference; it is up to you.</>
+                }
+            },
+            {
+                name: "Box3",
+                props: {
+                    title: "Step 4: View the HTML Page in Your Browser",
+                    info: [
+                        `Open the saved HTML file in your favorite browser (double click on the file, or right-click - and choose "Open with").`,
+                        `The result will look much like this:`
+                    ],
+                    img: "https://www.w3schools.com/html/img_chrome.png",
+                    img_width: "60%"
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: `W3Schools Online Editor - "Try it Yourself"`,
+                    info: [
+                        "With our free online editor, you can edit the HTML code and view the result in your browser.",
+                        "It is the perfect tool when you want to test code fast. It also has color coding and the ability to save and share code with others:"
+                    ],
+                    code: [
+                        "<!DOCTYPE html>", "<html>", "<head>", "<title>Page Title</title>", "</head>", "<body>", "<h1>This is a Heading</h1>", "<p>This is a paragraph.</p>", "</body>", "</html>"
+                    ],
+                    data: <><b>Click on the "Try it Yourself" button to see how it works.</b></>,
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_editors"
+                }
+            },
+            {
+                name: "Box3",
+                props: {
+                    title: "W3Schools Spaces",
+                    info: [
+                        "If you want to create your own website and save your code online, try our free website builder, called W3schools Spaces:",
+                    ],
+                    howitworks: true
+                }
+            }
+        ]
+    },
+    {
+
+        section: "HTML",
+        page_name: "CSS",
+        components: [
+            {
+                name: "Box3",
+                props: {
+                    head: "HTML Basic Examples",
+                    info: ["In this chapter, we will show some basic HTML examples.",
+                        "Don't worry if we use tags you have not learned about yet."
+                    ],
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: "HTML Documents",
+                    info: [<>All HTML documents must start with a document type declaration: <span className='red_grey'> &lt;!DOCTYPE html&gt;</span></>,
+                    <>The HTML document itself begins with <span className='red_grey'> &lt;HTML&gt;</span> and ends with <span className='red_grey'>&lt;HTML&gt;</span>.</>,
+                    <>The visible part of the HTML document is between <span className='red_grey'> &lt;Body&gt;</span> and <span className='red_grey'> &lt;Body&gt;</span>.</>
+                    ],
+                    code: ["<!DOCTYPE html>",
+                        "<html>",
+                        "<body>",
+                        "<h1>My First Heading</h1>",
+                        "<p>My first paragraph.</p>",
+                        "</body>",
+                        "</html>"
+                    ],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic_document"
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: "The <!DOCTYPE> Declaration",
+                    info: [<>The <span className='red_grey'> &lt;!DOCTYPE&gt;</span> declaration represents the document type and helps browsers display web pages correctly.</>,
+                    <>It must only appear once, at the top of the page (before any HTML tags).</>,
+                    <>The <span className='red_grey'> &lt;!DOCTYPE&gt;</span> declaration is not case sensitive.</>,
+                    <>The <span className='red_grey'> &lt;!DOCTYPE&gt;</span> declaration for HTML5 is:</>
+                    ],
+                    code: ["<!DOCTYPE html>"],
+                }
+
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: "HTML Headings",
+                    info: [
+                        <>HTML headings are defined with the <span className='red_grey'>&lt;h1&gt;</span> to <span className='red_grey'>&lt;h6&gt;</span> tags.</>,
+                        <><span className='red_grey'>&lt;h1&gt;</span> defines the most important heading. <span className='red_grey'>&lt;h6&gt;</span> defines the least important heading.</>
+                    ],
+                    code: ["<h1>This is heading 1</h1>",
+                        "<h2>This is heading 2</h2>",
+                        "<h3>This is heading 3</h3>"
+                    ],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic_headings"
+                }
+
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: "HTML Paragraphs",
+                    info: [<>HTML paragraphs are defined with the <span className='red_grey'> &lt;p&gt;</span> tag:</>],
+                    code: ["<p>This is a paragraph.</p>",
+                        "<p>This is another paragraph.</p>"
+                    ],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic_paragraphs"
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: "HTML Links",
+                    example_info: "HTML links are defined with the <a> tag:",
+                    code: [`<a href="https://www.w3schools.com">This is a link</a>`],
+                    data: ["The link's destination is specified in the href attribute.",
+                        "Attributes are used to provide additional information about HTML elements.",
+                        "You will learn more about attributes in a later chapter."
+                    ],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic_link"
+                }
+
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: "HTML Images",
+                    info: [<>HTML images are defined with the <span className='red_grey'>&lt;img&gt;</span> tag.</>,
+                    <>The source file (<span className='red_grey'>src</span>), alternative text (<span className='red_grey'>alt</span>), <span className='red_grey'>width</span>, and <span className='red_grey'>height</span> are provided as attributes:</>
+                    ],
+                    code: [`<img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142`],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic_img"
+                }
+
+            },
+            {
+                name: "Box3",
+                props: {
+                    title: "How to View HTML Source",
+                    info: `Have you ever seen a Web page and wondered "Hey! How did they do that?"`
+                }
+            },
+            {
+                name: "Box3",
+                props: {
+                    title: "View HTML Source Code:",
+                    info: `Click CTRL + U in an HTML page, or right-click on the page and select "View Page Source". This will open a new tab containing the HTML source code of the page.`
+                }
+            },
+            {
+                name: "Box3",
+                props: {
+                    title: "Inspect an HTML Element:",
+                    info: `Right-click on an element (or a blank area), and choose "Inspect" to see what elements are made up of (you will see both the HTML and the CSS). You can also edit the HTML or CSS on-the-fly in the Elements or Styles panel that opens.`
+                }
+            },
+
+        ]
+    },
+    {
+
+        section: "HTML",
+        page_name: "Links",
+        components: [
+            {
+                name: "Box3",
+                props: {
+                    head: "HTML Elements",
+                    info: ["An HTML element is defined by a start tag, some content, and an end tag."],
+                }
+            },
+            {
+                name: "Box3",
+                props: {
+                    title: "HTML Elements",
+                    info: ["The HTML element is everything from the start tag to the end tag:",
+                        "<tagname>Content goes here...</tagname>",
+                        "Examples of some HTML elements:",
+                        "<h1>My First Heading</h1>",
+                        "<p>My first paragraph.</p>"],
+                    img: image5,
+                    img_width: "100%"
+                }
+
+            },
+            {
+                name: "Box5",
+                props: {
+                    info: `"Some HTML elements have no content (like the <br> element). These elements are called empty elements. Empty elements do not have an end tag!"`,
+                }
+
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: "Nested HTML Elements",
+                    info: ["HTML elements can be nested (this means that elements can contain other elements).",
+                        "All HTML documents consist of nested HTML elements.",
+                        "The following example contains four HTML elements (<html>, <body>, <h1> and <p>):"
+                    ],
+                    code: ["<!DOCTYPE html>",
+                        "<html>",
+                        "<body>",
+                        "<h1>My First Heading</h1>",
+                        "<p>My first paragraph.</p>",
+                        "</body>",
+                        "</html>"
+                    ],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_elements"
+                }
+
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: "Example Explained",
+                    info: [
+                        <>The <span className='red_grey'>&lt;html&gt;</span> element is the root element and it defines the whole HTML document.</>,
+                        <>It has a start tag <span className='red_grey'>&lt;html&gt;</span> and an end tag <span className='red_grey'>&lt;/html&gt;</span>.</>,
+                        <>Then, inside the <span className='red_grey'>&lt;html&gt;</span> element there is a <span className='red_grey'>&lt;body&gt;</span> element:</>
+                    ],
+                    code: ["<body>",
+                        "<h1>My First Heading</h1>",
+                        "<p>My first paragraph.</p>",
+                        "</body>"
+                    ],
+                    data: [
+                        <>The <span className='red_grey'>&lt;body&gt;</span> element defines the document's body.</>,
+                        <>It has a start tag <span className='red_grey'>&lt;body&gt;</span> and an end tag <span className='red_grey'>&lt;/body&gt;</span>.</>,
+                        <>Then, inside the <span className='red_grey'>&lt;body&gt;</span> element there are two other elements: <span className='red_grey'>&lt;h1&gt;</span> and <span className='red_grey'>&lt;p&gt;</span>:</>
+                    ],
+                }
+
+            },
+            {
+                name: "Box2",
+                props: {
+                    code: [
+                        "<h1>My First Heading</h1>",
+                    ],
+                    data: [
+                        <>The <span className='red_grey'>&lt;p&gt;</span> element defines a paragraph.</>,
+                        <>It has a start tag <span className='red_grey'>&lt;p&gt;</span> and an end tag <span className='red_grey'>&lt;/p&gt;</span>:</>
+                    ],
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    code: [
+                        "<h1>My First Heading</h1>",
+                        "<p>My first paragraph.</p>",
+                    ],
+                    data: [
+                        <>The <span className='red_grey'>&lt;h1&gt;</span> element defines a heading.</>,
+                        <>It has a start tag <span className='red_grey'>&lt;h1&gt;</span> and an end tag <span className='red_grey'>&lt;/h1&gt;</span>:</>
+                    ],
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    code: [
+                        "<p>My first paragraph.</p>",
+                    ]
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: "Never Skip the End Tag",
+                    info: ["Some HTML elements will display correctly, even if you forget the end tag"],
+                    code: ["<html>",
+                        "<body>",
+                        "<p>This is a paragraph",
+                        "<p>This is a paragraph",
+                        "</body>",
+                        "</html>"
+                    ],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_no_endtag",
+                    data_bold: "However, never rely on this! Unexpected results and errors may occur if you forget the end tag!"
+                }
+
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: "Empty HTML Elements",
+                    info: ["HTML elements with no content are called empty elements.",
+                        "The <br> tag defines a line break, and is an empty element without a closing tag:"
+                    ],
+                    code: ["<p>This is a <br> paragraph with a line break.</p>"],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_elements_br"
+                }
+            },
+            {
+                name: "Box3",
+                props: {
+                    title: "HTML is Not Case Sensitive",
+                    info: ["HTML tags are not case sensitive: <P> means the same as <p>.",
+                        "The HTML standard does not require lowercase tags, but W3C recommends lowercase in HTML, and demands lowercase for stricter document types like XHTML."
+                    ],
+                }
+
+            },
+            {
+                name: "Box5",
+                props: {
+                    info: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_elements_br"
+                }
+            },
+            {
+                name: "Box3",
+                props: {
+                    title: "HTML Tag Reference",
+                    info: ["W3Schools' tag reference contains additional information about these tags and their attributes.",
+                        "Tag	Description",
+                        "<html>	Defines the root of an HTML document",
+                        "<body>	Defines the document's body",
+                        "<h1> to <h6>	Defines HTML headings"
+                    ],
+                    data: "For a complete list of all available HTML tags, visit our HTML Tag Reference.",
+                }
+
+            },
+
+        ]
+    },
+
+
+    {
+
+        section: "HTML",
+        page_name: "Images",
+        components: [
+            {
+                name: "Box2",
+                props: {
+                    head: "HTML Headings",
+                    info: ["HTML headings are titles or subtitles that you want to display on a webpage."],
+                    code: ["Heading 1",
+                        "Heading 2",
+                        "Heading 3",
+                        "Heading 4",
+                        "Heading 5",
+                        "Heading 6"
+                    ],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_headings"
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: "HTML Headings",
+                    info: [
+                        <>HTML headings are defined with the <span className='red_grey'>&lt;h1&gt;</span> to <span className='red_grey'>&lt;h6&gt;</span> tags.</>,
+                        <><span className='red_grey'>&lt;h1&gt;</span> defines the most important heading. <span className='red_grey'>&lt;h6&gt;</span> defines the least important heading.</>
+                    ],
+                    code: ["<h1>Heading 1</h1>",
+                        "<h2>Heading 2</h2>",
+                        "<h3>Heading 3</h3>",
+                        "<h4>Heading 4</h4>",
+                        "<h5>Heading 5</h5>",
+                        "<h6>Heading 6</h6>"
+                    ],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_headings",
+                }
+            },
+            {
+                name: "Box5",
+                props: {
+                    info: "Browsers automatically add some white space (a margin) before and after a heading."
+                }
+            },
+            {
+                name: "Box3",
+                props: {
+                    title: "Headings Are Important",
+                    info: [
+                        "Search engines use the headings to index the structure and content of your web pages.",
+                        "Users often skim a page by its headings. It i s important to use headings to show the document structure.",
+                        <><span className='red_grey'>&lt;h1&gt;</span> headings should be used for main headings, followed by <span className='red_grey'>&lt;h2&gt;</span> headings, then the less important <span className='red_grey'>&lt;h3&gt;</span>, and so on.</>
+                    ],
+                }
+
+            },
+            {
+                name: "Box5",
+                props: {
+                    info: <><b>Note:</b> Use HTML headings for headings only. Don't use headings to make text BIG or bold.</>
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: "Bigger Headings",
+                    info: [<>Each HTML heading has a default size. However, you can specify the size for any heading with the <span className='red_grey'>style</span> attribute, using the CSS <span className='red_grey'>font-size</span> property:</>],
+                    code: [`<h1 style="font-size:60px;">Heading 1</h1>`],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_headings_size"
+                }
+
+            },
+            {
+                name: "Box3",
+                props: {
+                    title: "HTML Tag Reference",
+                    info: ["W3Schools' tag reference contains additional information about these tags and their attributes."],
+                }
+
+            },
+            {
+                name: "Box5",
+                props: {
+                    info: "For a complete list of all available HTML tags, visit our HTML Tag Reference."
+                }
+            }
+
+        ]
+    },
+    {
+        section: "HTML",
+        page_name: "Favicons",
+        components: [
+            {
+                name: "Box3",
+                props: {
+                    head: "HTML Paragraphs",
+                    info: [<>"A paragraph always starts on a new line, and is usually a block of text."</>],
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: "HTML Paragraphs",
+                    info: [
+                        <>The HTML <span className='red_grey'>&lt;p&gt;</span> element defines a paragraph.</>,
+                        <>A paragraph always starts on a new line, and browsers automatically add some white space (a margin) before and after a <span className='red_grey'>&lt;p&gt;</span> element.</>
+                    ],
+                    code: ["<p>This is a paragraph.</p>", "<p>This is another paragraph.</p>"],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_paragraphs1"
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: "HTML Display",
+                    info: [
+                        <>You cannot be sure how HTML will be displayed.</>,
+                        <>Large or small screens, and resized windows will create different results.</>,
+                        <>With HTML, you cannot change the display by adding extra spaces or extra lines in your HTML code.</>,
+                        <>The browser will automatically remove any extra spaces and lines when the page is displayed:</>
+                    ],
+                    code: [
+                        "<p>",
+                        "This paragraph",
+                        "contains a lot of lines",
+                        "in the source code,",
+                        "but the browser",
+                        "ignores it.",
+                        "</p>",
+                        "<p>",
+                        "This paragraph",
+                        "contains         a lot of spaces",
+                        "in the source         code,",
+                        "but the        browser",
+                        "ignores it.",
+                        "</p>"
+                    ],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_paragraphs2"
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: "HTML Horizontal Rules",
+                    info: [
+                        <>The <span className='red_grey'>&lt;hr&gt;</span> tag defines a thematic break in an HTML page, and is most often displayed as a horizontal rule.</>,
+                        <>The <span className='red_grey'>&lt;hr&gt;</span> element is used to separate content (or define a change) in an HTML page:</>
+                    ],
+                    code: ["<h1>This is heading 1</h1>",
+                        "<p>This is some text.</p>",
+                        "<hr>",
+                        "<h2>This is heading 2</h2>",
+                        "<p>This is some other text.</p>",
+                        "<hr>"
+                    ],
+                    data: <><span className='red_grey'>&lt;hr&gt;</span> tag is an empty tag, which means that it has no end tag.</>,
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_headings_hr"
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: "HTML Line Breaks",
+                    info: [
+                        <>The HTML <span className='red_grey'>&lt;br&gt;</span> element defines a line break.</>,
+                        <>Use <span className='red_grey'>&lt;br&gt;</span> if you want a line break (a new line) without starting a new paragraph:</>
+                    ],
+                    code: ["<p>This is<br>a paragraph<br>with line breaks.</p>"],
+                    data: <><span className='red_grey'>&lt;br&gt;</span> tag is an empty tag, which means that it has no end tag.</>,
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_paragraphs"
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: "The Poem Problem",
+                    info: [<>"This poem will display on a single line:"</>],
+                    code: [
+                        "<p>",
+                        "My Bonnie lies over the ocean.",
+                        "My Bonnie lies over the sea.",
+                        "My Bonnie lies over the ocean.",
+                        "Oh, bring back my Bonnie to me.",
+                        "</p>"
+                    ],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_poem"
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: "Solution - The HTML <pre> Element",
+                    info: [
+                        <>The HTML <span className='red_grey'>&lt;pre&gt;</span> element defines preformatted text. The text inside a <span className='red_grey'>&lt;pre&gt;</span> element is displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks:</>
+                    ],
+                    code: ["<pre>",
+                        "My Bonnie lies over the ocean.",
+                        "My Bonnie lies over the sea.",
+                        "My Bonnie lies over the ocean.",
+                        "Oh, bring back my Bonnie to me.",
+                        "</pre>"
+                    ],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_pre",
+                }
+            },
+            {
+                name: "Box3",
+                props: {
+                    title: "HTML Tag Reference",
+                    info: [<>"W3Schools' tag reference contains additional information about these tags and their attributes."</>],
+                }
+            },
+            {
+                name: "Box5",
+                props: {
+                    info: <>"For a complete list of all available HTML tags, visit our HTML Tag Reference."</>
+                }
+            }
+        ]
+    },
+
+    {
+        section: "HTML",
+        page_name: "Table",
+        components: [
+            {
+                name: "Box2",
+                props: {
+                    head: "HTML Styles",
+                    info: ["The HTML style attribute is used to add styles to an element, such as color, font, size, and more."],
+                    code: ["I am Red",
+                        "I am Blue",
+                        "I am Big",
+                    ],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_styles_intro",
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: "The HTML Style Attribute",
+                    info: ["Setting the style of an HTML element, can be done with the style attribute.",
+                        "The HTML style attribute has the following syntax:"
+                    ],
+                    code: [`<tagname style="property:value;">`],
+                }
+            },
+            {
+                name: "Box5",
+                props: {
+                    info: "You will learn more about CSS later in this tutorial.",
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: "Background Color",
+                    info: ["The CSS background-color property defines the background color for an HTML element."],
+                    example_info: ["Set the background color for a page to powderblue:"],
+                    code: [`<body style="background-color:powderblue;">`,
+                        "<h1>This is a heading</h1>",
+                        "<p>This is a paragraph.</p>",
+                        "</body>"
+                    ],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_styles_background-color"
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    example_info: ["Set background color for two different elements:"],
+                    code: ["<body>",
+                        `<h1 style="background-color:powderblue;">This is a heading</h1>`,
+                        `<p style="background-color:tomato;">This is a paragraph.</p>`,
+                        "</body>"
+                    ],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_styles_background-color2",
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: "Text Color",
+                    info: ["The CSS color property defines the text color for an HTML element:"],
+                    code: [`<h1 style="color:blue;">This is a heading</h1>
+                    <p style="color:red;">This is a paragraph.</p>
+                    `],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_styles_color"
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: "Fonts",
+                    info: ["The CSS font-family property defines the font to be used for an HTML element:"],
+                    code: [`<h1 style="font-family:verdana;">This is a heading</h1>`,
+                        `<p style="font-family:courier;">This is a paragraph.</p>`
+                    ],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_styles_font-family"
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: "Text Size",
+                    info: ["The CSS font-size property defines the text size for an HTML element:"],
+                    code: [`<h1 style="font-size:300%;">This is a heading</h1>
+                    <p style="font-size:160%;">This is a paragraph.</p>`],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_styles_color",
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: "Text Alignment",
+                    info: ["The CSS text-align property defines the horizontal text alignment for an HTML element:"],
+                    code: [`<h1 style="text-align:center;">Centered Heading</h1>
+                    <p style="text-align:center;">Centered paragraph.</p>
+                    `],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_styles_color",
+                }
+            },
+            {
+                name: "Box3",
+                props: {
+                    title: "Chapter Summary",
+                    links: [
+                        <>Use the <span className='red_grey'>style</span> attribute for styling HTML elements</>,
+                        <>Use <span className='red_grey'>background-color</span> for background color</>,
+                        <>Use <span className='red_grey'>color</span> for text colors</>,
+                        <>Use <span className='red_grey'>font-family</span> for text fonts</>,
+                        <>Use <span className='red_grey'>font-size</span> for text sizes</>,
+                        <>Use <span className='red_grey'>text-align</span> for text alignment</>
+                    ],
+
+                }
+            },
+        ]
+
+    },
+    {
+        section: "HTML",
+        page_name: "Lists",
+        components: [
+            {
+                name: "Box2",
+                props: {
+                    head: "HTML Text Formatting",
+                    info: ["HTML contains several elements for defining text with a special meaning."],
+                    code: [`This text is bold
+                    This text is italic
+                    This is subscript and superscript`],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_intro",
+                }
+            },
+            {
+                name: "Box3",
+                props: {
+                    title: "HTML Formatting Elements",
+                    info: ["Formatting elements were designed to display special types of text:"],
+                    links: [
+                        <><span className='red_grey'>&lt;b&gt;</span> for bold text</>,
+                        <><span className='red_grey'>&lt;strong&gt;</span> for important text</>,
+                        <><span className='red_grey'>&lt;i&gt;</span> for italic text</>,
+                        <><span className='red_grey'>&lt;em&gt;</span> for emphasized text</>,
+                        <><span className='red_grey'>&lt;mark&gt;</span> for marked text</>,
+                        <><span className='red_grey'>&lt;small&gt;</span> for smaller text</>,
+                        <><span className='red_grey'>&lt;del&gt;</span> for deleted text</>,
+                        <><span className='red_grey'>&lt;ins&gt;</span> for inserted text</>,
+                        <><span className='red_grey'>&lt;sub&gt;</span> for subscript text</>,
+                        <><span className='red_grey'>&lt;sup&gt;</span> for superscript text</>
+                    ]
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: "HTML <b> and <strong> Elements",
+                    info: ["The HTML <b> element defines bold text, without any extra importance."],
+                    code: ["<b>This text is bold</b>"],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_b",
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    info: ["The HTML <strong> element defines text with strong importance. The content inside is typically displayed in bold."],
+                    code: ["<strong>This text is important!</strong>"],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_strong"
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: "HTML <i> and <em> Elements",
+                    info: ["The HTML <i> element defines a part of text in an alternate voice or mood. The content inside is typically displayed in italic.",
+                        "Tip: The <i> tag is often used to indicate a technical term, a phrase from another language, a thought, a ship name, etc."
+                    ],
+                    code: ["<i>This text is italic</i"],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_i",
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    info: ["The HTML <em> element defines emphasized text. The content inside is typically displayed in italic.",
+                        "Tip: A screen reader will pronounce the words in <em> with an emphasis, using verbal stress."
+                    ],
+                    code: ["<i>This text is italic</i"],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_i",
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: "HTML <small> Element",
+                    info: ["The HTML <small> element defines smaller text:"],
+                    code: ["<small>This text is small</small>"],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_i",
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: "HTML <ins> Element",
+                    info: ["The HTML <ins> element defines a text that has been inserted into a document. Browsers will usually underline inserted text:"],
+                    code: ["<p>My favorite color is <del>blue</del> <ins>red</ins>.</p>"],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_sub"
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: "HTML <sub> Element",
+                    info: ["The HTML <sub> element defines subscript text. Subscript text appears half a character below the normal line, and is sometimes rendered in a smaller font. Subscript text can be used for chemical formulas, like H2O:"],
+                    code: [`<p>This is <sub>subscripted</sub> text.</p>`],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_sub"
+                }
+            }
+        ]
+    },
+    {
+        section: "HTML",
+        page_name: "Classes",
+        components: [
+            {
+                name: "Box1",
+                props: {
+                    head: "HTML Tutorial",
+                    info: [
+                        "HTML is the standard markup language for Web pages.",
+                        "With HTML you can create your own Website.",
+                        "HTML is easy to learn - You will enjoy it!"
+                    ],
+                    button_data: "Study our free HTML Tutorial"
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: `Easy Learning with HTML "Try it Yourself"`,
+                    info: "With our Try it Yourself editor, you can edit the HTML code and view the result:",
+                    code: [
+                        "<!DOCTYPE html>", "<html>", "<head>", "<title>Page Title</title>", "</head>", "<body>", "<h1>This is a Heading</h1>", "<p>This is a paragraph.</p>", "</body>", "</html>"
+                    ],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default",
+                    data: `Click on the "Try it Yourself" button to see how it works.`
+                }
+            },
+            {
+                name: "Box3",
+                props: {
+                    title: "HTML Examples",
+                    info: "In this HTML tutorial, you will find more than 200 examples. With our online Try it Yourself editor, you can edit and test each example yourself!"
+                }
+            },
+            {
+                name: "Box3",
+                props: {
+                    title: "My Learning",
+                    info: "Track your progress with the free My Learning program here at W3Schools. Log in to your account, and start earning points! This is an optional feature. You can study W3Schools without using My Learning.",
+                    img: true
+                }
+            },
+            {
+                name: "Box3",
+                props: {
+                    title: "HTML References",
+                    info: "At W3Schools you will find complete references about HTML elements, attributes, events, color names, entities, character-sets, URL encoding, language codes, HTTP messages, browser support, and more:"
+                }
+            },
+        ],
+
+    },
+    // html page 2
+    {
+        section: "HTML",
+        page_name: "Layout",
+        components: [
+            {
+                name: "Box3",
+                props: {
+                    head: "HTML Introduction",
+                    info: "HTML is the standard markup language for creating Web pages."
+                }
+            },
+            {
+                name: "Box3",
+                props: {
+                    title: "What is HTML?",
+                    links: [
+                        "HTML stands for Hyper Text Markup Language",
+                        "HTML is the standard markup language for creating Web pages",
+                        "HTML describes the structure of a Web page",
+                        "HTML consists of a series of elements",
+                        "HTML elements tell the browser how to display the content",
+                        "HTML elements label pieces of content such as 'this is a heading', 'this is a paragraph' 'this is a link'"
+                    ]
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: `A Simple HTML Document`,
+                    code: ["<!DOCTYPE html>", "<html>", "<head>", "<title>Page Title</title>", "</head>", "<body>", "<h1>My First Heading</h1>", "<p>My first paragraph.</p>", "</body>", "</html>"
+                    ],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_intro"
+                }
+            },
+            {
+                name: "Box3",
+                props: {
+                    title: "Example Explained",
+                    links: [
+                        <>The <span className='text-[#de143c] bg-[#f5f5f5] font-semibold'>&lt;!DOCTYPE html&gt;</span> declaration defines that this document is an HTML5 document</>,
+                        <>The <span className='text-[#de143c] bg-[#f5f5f5] font-semibold'>&lt;html&gt;</span> element is the root element of an HTML page</>,
+                        <>The <span className='text-[#de143c] bg-[#f5f5f5] font-semibold'>&lt;head&gt;</span> element contains meta information about the HTML page</>,
+                        <>The <span className='text-[#de143c] bg-[#f5f5f5] font-semibold'>&lt;title&gt;</span> element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)</>,
+                        <>The <span className='text-[#de143c] bg-[#f5f5f5] font-semibold'>&lt;body&gt;</span> element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.</>,
+                        <>The <span className='text-[#de143c] bg-[#f5f5f5] font-semibold'>&lt;h1&gt;</span> element defines a large heading</>,
+                        <>The <span className='text-[#de143c] bg-[#f5f5f5] font-semibold'>&lt;p&gt;</span> element defines a paragraph</>
+                    ]
+                }
+            },
+            {
+                name: "Box3",
+                props: {
+                    title: "What is an HTML Element?",
+                    info: [
+                        "An HTML element is defined by a start tag, some content, and an end tag: <tagname> Content goes here... </tagname>",
+                        "The HTML element is everything from the start tag to the end tag: <h1>My First Heading</h1><p>My first paragraph.</p>"
+                    ]
+                }
+            },
+            {
+                name: "Box3",
+                props: {
+                    title: "Web Browsers",
+                    info: [
+                        "The purpose of a web browser (Chrome, Edge, Firefox, Safari) is to read HTML documents and display them correctly.",
+                        "A browser does not display the HTML tags, but uses them to determine how to display the document"
+                    ],
+                    img: "https://www.w3schools.com/html/img_chrome.png"
+                }
+            },
+            {
+                name: "Box3",
+                props: {
+                    title: "HTML Page Structure",
+                    info: [
+                        "Below is a visualization of an HTML page structure:",
+                    ],
+                    img: image1,
+                    note: "The content inside the <body> section will be displayed in a browser. The content inside the <title> element will be shown in the browser's title bar or in the page's tab.",
+                    img_width: "100%"
+                }
+            },
+            {
+                name: "Box3",
+                props: {
+                    title: "HTML History",
+                    info: [
+                        "Since the early days of the World Wide Web, there have been many versions of HTML:",
+                        "This tutorial follows the latest HTML5 standard."
+                    ],
+                    img: image2,
+                    img_width: "100%"
+                }
+            },
+            {
+                name: "Box5",
+                props: {
+                    info: "This tutorial follows the latest HTML5 standard."
+                }
+            }
+        ]
+    },
+    // html page 3
+    {
+        section: "HTML",
+        page_name: "Responsive",
+        components: [
+            {
+                name: "Box3",
+                props: {
+                    head: "HTML Editors",
+                    info: "A simple text editor is all you need to learn HTML."
+                }
+            },
+            {
+                name: "Box3",
+                props: {
+                    title: "WLearn HTML Using Notepad or TextEdit",
+                    info: [
+                        "Web pages can be created and modified by using professional HTML editors.",
+                        "However, for learning HTML we recommend a simple text editor like Notepad (PC) or TextEdit (Mac).",
+                        "We believe that using a simple text editor is a good way to learn HTML.",
+                        "Follow the steps below to create your first web page with Notepad or TextEdit.",
+                    ]
+                }
+            },
+            {
+                name: "Box3",
+                props: {
+                    title: "Step 1: Open Notepad (PC)",
+                    info: [
+                        <>Open <b>Finder &gt; Applications &gt; TextEdit</b></>,
+                        <>Also change some preferences to get the application to save files correctly. In <b>Preferences &gt; Format &gt;</b>choose<b> "Plain Text"</b></>,
+                        `Then under "Open and Save", check the box that says "Display HTML files as HTML code instead of formatted text".`,
+                        <><b>Then open a new document to place the code.</b></>,
+                    ]
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: `Step 2: Write Some HTML`,
+                    info: "Write or copy the following HTML code into Notepad:",
+                    code: ["<!DOCTYPE html>", "<html>", "<body>", "<h1>My First Heading</h1>", "<p>My first paragraph.</p>", "</body>", "</html>"
+                    ],
+                    imageSrc: "https://www.w3schools.com/html/img_notepad.png"
+                }
+            },
+            {
+                name: "Box3",
+                props: {
+                    title: "Step 3: Save the HTML Page",
+                    info: [
+                        <>Save the file on your computer. Select <b>File &gt; save as</b> in the NotePad menu</>,
+                        <>Name the file <b>"index.htm"</b> and set the encoding to <b>UTF-8</b> (which is the preferred encoding for HTML files).</>,
+                    ],
+                    img: "https://www.w3schools.com/html/img_saveas.png",
+                }
+            },
+            {
+                name: "Box5",
+                props: {
+                    info: <><b>Tip:</b> You can use either .htm or .html as file extension. There is no difference; it is up to you.</>
+                }
+            },
+            {
+                name: "Box3",
+                props: {
+                    title: "Step 4: View the HTML Page in Your Browser",
+                    info: [
+                        `Open the saved HTML file in your favorite browser (double click on the file, or right-click - and choose "Open with").`,
+                        `The result will look much like this:`
+                    ],
+                    img: "https://www.w3schools.com/html/img_chrome.png",
+                    img_width: "60%"
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: `W3Schools Online Editor - "Try it Yourself"`,
+                    info: [
+                        "With our free online editor, you can edit the HTML code and view the result in your browser.",
+                        "It is the perfect tool when you want to test code fast. It also has color coding and the ability to save and share code with others:"
+                    ],
+                    code: [
+                        "<!DOCTYPE html>", "<html>", "<head>", "<title>Page Title</title>", "</head>", "<body>", "<h1>This is a Heading</h1>", "<p>This is a paragraph.</p>", "</body>", "</html>"
+                    ],
+                    data: <><b>Click on the "Try it Yourself" button to see how it works.</b></>,
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_editors"
+                }
+            },
+            {
+                name: "Box3",
+                props: {
+                    title: "W3Schools Spaces",
+                    info: [
+                        "If you want to create your own website and save your code online, try our free website builder, called W3schools Spaces:",
+                    ],
+                    howitworks: true
+                }
+            }
+        ]
+    },
+    {
+
+        section: "HTML",
+        page_name: "Video",
+        components: [
+            {
+                name: "Box3",
+                props: {
+                    head: "HTML Basic Examples",
+                    info: ["In this chapter, we will show some basic HTML examples.",
+                        "Don't worry if we use tags you have not learned about yet."
+                    ],
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: "HTML Documents",
+                    info: [<>All HTML documents must start with a document type declaration: <span className='red_grey'> &lt;!DOCTYPE html&gt;</span></>,
+                    <>The HTML document itself begins with <span className='red_grey'> &lt;HTML&gt;</span> and ends with <span className='red_grey'>&lt;HTML&gt;</span>.</>,
+                    <>The visible part of the HTML document is between <span className='red_grey'> &lt;Body&gt;</span> and <span className='red_grey'> &lt;Body&gt;</span>.</>
+                    ],
+                    code: ["<!DOCTYPE html>",
+                        "<html>",
+                        "<body>",
+                        "<h1>My First Heading</h1>",
+                        "<p>My first paragraph.</p>",
+                        "</body>",
+                        "</html>"
+                    ],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic_document"
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: "The <!DOCTYPE> Declaration",
+                    info: [<>The <span className='red_grey'> &lt;!DOCTYPE&gt;</span> declaration represents the document type and helps browsers display web pages correctly.</>,
+                    <>It must only appear once, at the top of the page (before any HTML tags).</>,
+                    <>The <span className='red_grey'> &lt;!DOCTYPE&gt;</span> declaration is not case sensitive.</>,
+                    <>The <span className='red_grey'> &lt;!DOCTYPE&gt;</span> declaration for HTML5 is:</>
+                    ],
+                    code: ["<!DOCTYPE html>"],
+                }
+
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: "HTML Headings",
+                    info: [
+                        <>HTML headings are defined with the <span className='red_grey'>&lt;h1&gt;</span> to <span className='red_grey'>&lt;h6&gt;</span> tags.</>,
+                        <><span className='red_grey'>&lt;h1&gt;</span> defines the most important heading. <span className='red_grey'>&lt;h6&gt;</span> defines the least important heading.</>
+                    ],
+                    code: ["<h1>This is heading 1</h1>",
+                        "<h2>This is heading 2</h2>",
+                        "<h3>This is heading 3</h3>"
+                    ],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic_headings"
+                }
+
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: "HTML Paragraphs",
+                    info: [<>HTML paragraphs are defined with the <span className='red_grey'> &lt;p&gt;</span> tag:</>],
+                    code: ["<p>This is a paragraph.</p>",
+                        "<p>This is another paragraph.</p>"
+                    ],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic_paragraphs"
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: "HTML Links",
+                    example_info: "HTML links are defined with the <a> tag:",
+                    code: [`<a href="https://www.w3schools.com">This is a link</a>`],
+                    data: ["The link's destination is specified in the href attribute.",
+                        "Attributes are used to provide additional information about HTML elements.",
+                        "You will learn more about attributes in a later chapter."
+                    ],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic_link"
+                }
+
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: "HTML Images",
+                    info: [<>HTML images are defined with the <span className='red_grey'>&lt;img&gt;</span> tag.</>,
+                    <>The source file (<span className='red_grey'>src</span>), alternative text (<span className='red_grey'>alt</span>), <span className='red_grey'>width</span>, and <span className='red_grey'>height</span> are provided as attributes:</>
+                    ],
+                    code: [`<img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142`],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic_img"
+                }
+
+            },
+            {
+                name: "Box3",
+                props: {
+                    title: "How to View HTML Source",
+                    info: `Have you ever seen a Web page and wondered "Hey! How did they do that?"`
+                }
+            },
+            {
+                name: "Box3",
+                props: {
+                    title: "View HTML Source Code:",
+                    info: `Click CTRL + U in an HTML page, or right-click on the page and select "View Page Source". This will open a new tab containing the HTML source code of the page.`
+                }
+            },
+            {
+                name: "Box3",
+                props: {
+                    title: "Inspect an HTML Element:",
+                    info: `Right-click on an element (or a blank area), and choose "Inspect" to see what elements are made up of (you will see both the HTML and the CSS). You can also edit the HTML or CSS on-the-fly in the Elements or Styles panel that opens.`
+                }
+            },
+
+        ]
+    },
+    {
+
+        section: "HTML",
+        page_name: "Audio",
+        components: [
+            {
+                name: "Box3",
+                props: {
+                    head: "HTML Elements",
+                    info: ["An HTML element is defined by a start tag, some content, and an end tag."],
+                }
+            },
+            {
+                name: "Box3",
+                props: {
+                    title: "HTML Elements",
+                    info: ["The HTML element is everything from the start tag to the end tag:",
+                        "<tagname>Content goes here...</tagname>",
+                        "Examples of some HTML elements:",
+                        "<h1>My First Heading</h1>",
+                        "<p>My first paragraph.</p>"],
+                    img: image5,
+                    img_width: "100%"
+                }
+
+            },
+            {
+                name: "Box5",
+                props: {
+                    info: `"Some HTML elements have no content (like the <br> element). These elements are called empty elements. Empty elements do not have an end tag!"`,
+                }
+
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: "Nested HTML Elements",
+                    info: ["HTML elements can be nested (this means that elements can contain other elements).",
+                        "All HTML documents consist of nested HTML elements.",
+                        "The following example contains four HTML elements (<html>, <body>, <h1> and <p>):"
+                    ],
+                    code: ["<!DOCTYPE html>",
+                        "<html>",
+                        "<body>",
+                        "<h1>My First Heading</h1>",
+                        "<p>My first paragraph.</p>",
+                        "</body>",
+                        "</html>"
+                    ],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_elements"
+                }
+
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: "Example Explained",
+                    info: [
+                        <>The <span className='red_grey'>&lt;html&gt;</span> element is the root element and it defines the whole HTML document.</>,
+                        <>It has a start tag <span className='red_grey'>&lt;html&gt;</span> and an end tag <span className='red_grey'>&lt;/html&gt;</span>.</>,
+                        <>Then, inside the <span className='red_grey'>&lt;html&gt;</span> element there is a <span className='red_grey'>&lt;body&gt;</span> element:</>
+                    ],
+                    code: ["<body>",
+                        "<h1>My First Heading</h1>",
+                        "<p>My first paragraph.</p>",
+                        "</body>"
+                    ],
+                    data: [
+                        <>The <span className='red_grey'>&lt;body&gt;</span> element defines the document's body.</>,
+                        <>It has a start tag <span className='red_grey'>&lt;body&gt;</span> and an end tag <span className='red_grey'>&lt;/body&gt;</span>.</>,
+                        <>Then, inside the <span className='red_grey'>&lt;body&gt;</span> element there are two other elements: <span className='red_grey'>&lt;h1&gt;</span> and <span className='red_grey'>&lt;p&gt;</span>:</>
+                    ],
+                }
+
+            },
+            {
+                name: "Box2",
+                props: {
+                    code: [
+                        "<h1>My First Heading</h1>",
+                    ],
+                    data: [
+                        <>The <span className='red_grey'>&lt;p&gt;</span> element defines a paragraph.</>,
+                        <>It has a start tag <span className='red_grey'>&lt;p&gt;</span> and an end tag <span className='red_grey'>&lt;/p&gt;</span>:</>
+                    ],
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    code: [
+                        "<h1>My First Heading</h1>",
+                        "<p>My first paragraph.</p>",
+                    ],
+                    data: [
+                        <>The <span className='red_grey'>&lt;h1&gt;</span> element defines a heading.</>,
+                        <>It has a start tag <span className='red_grey'>&lt;h1&gt;</span> and an end tag <span className='red_grey'>&lt;/h1&gt;</span>:</>
+                    ],
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    code: [
+                        "<p>My first paragraph.</p>",
+                    ]
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: "Never Skip the End Tag",
+                    info: ["Some HTML elements will display correctly, even if you forget the end tag"],
+                    code: ["<html>",
+                        "<body>",
+                        "<p>This is a paragraph",
+                        "<p>This is a paragraph",
+                        "</body>",
+                        "</html>"
+                    ],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_no_endtag",
+                    data_bold: "However, never rely on this! Unexpected results and errors may occur if you forget the end tag!"
+                }
+
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: "Empty HTML Elements",
+                    info: ["HTML elements with no content are called empty elements.",
+                        "The <br> tag defines a line break, and is an empty element without a closing tag:"
+                    ],
+                    code: ["<p>This is a <br> paragraph with a line break.</p>"],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_elements_br"
+                }
+            },
+            {
+                name: "Box3",
+                props: {
+                    title: "HTML is Not Case Sensitive",
+                    info: ["HTML tags are not case sensitive: <P> means the same as <p>.",
+                        "The HTML standard does not require lowercase tags, but W3C recommends lowercase in HTML, and demands lowercase for stricter document types like XHTML."
+                    ],
+                }
+
+            },
+            {
+                name: "Box5",
+                props: {
+                    info: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_elements_br"
+                }
+            },
+            {
+                name: "Box3",
+                props: {
+                    title: "HTML Tag Reference",
+                    info: ["W3Schools' tag reference contains additional information about these tags and their attributes.",
+                        "Tag	Description",
+                        "<html>	Defines the root of an HTML document",
+                        "<body>	Defines the document's body",
+                        "<h1> to <h6>	Defines HTML headings"
+                    ],
+                    data: "For a complete list of all available HTML tags, visit our HTML Tag Reference.",
+                }
+
+            },
+
+        ]
+    },
+
+
+    {
+
+        section: "HTML",
+        page_name: "Forms",
+        components: [
+            {
+                name: "Box2",
+                props: {
+                    head: "HTML Headings",
+                    info: ["HTML headings are titles or subtitles that you want to display on a webpage."],
+                    code: ["Heading 1",
+                        "Heading 2",
+                        "Heading 3",
+                        "Heading 4",
+                        "Heading 5",
+                        "Heading 6"
+                    ],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_headings"
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: "HTML Headings",
+                    info: [
+                        <>HTML headings are defined with the <span className='red_grey'>&lt;h1&gt;</span> to <span className='red_grey'>&lt;h6&gt;</span> tags.</>,
+                        <><span className='red_grey'>&lt;h1&gt;</span> defines the most important heading. <span className='red_grey'>&lt;h6&gt;</span> defines the least important heading.</>
+                    ],
+                    code: ["<h1>Heading 1</h1>",
+                        "<h2>Heading 2</h2>",
+                        "<h3>Heading 3</h3>",
+                        "<h4>Heading 4</h4>",
+                        "<h5>Heading 5</h5>",
+                        "<h6>Heading 6</h6>"
+                    ],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_headings",
+                }
+            },
+            {
+                name: "Box5",
+                props: {
+                    info: "Browsers automatically add some white space (a margin) before and after a heading."
+                }
+            },
+            {
+                name: "Box3",
+                props: {
+                    title: "Headings Are Important",
+                    info: [
+                        "Search engines use the headings to index the structure and content of your web pages.",
+                        "Users often skim a page by its headings. It i s important to use headings to show the document structure.",
+                        <><span className='red_grey'>&lt;h1&gt;</span> headings should be used for main headings, followed by <span className='red_grey'>&lt;h2&gt;</span> headings, then the less important <span className='red_grey'>&lt;h3&gt;</span>, and so on.</>
+                    ],
+                }
+
+            },
+            {
+                name: "Box5",
+                props: {
+                    info: <><b>Note:</b> Use HTML headings for headings only. Don't use headings to make text BIG or bold.</>
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: "Bigger Headings",
+                    info: [<>Each HTML heading has a default size. However, you can specify the size for any heading with the <span className='red_grey'>style</span> attribute, using the CSS <span className='red_grey'>font-size</span> property:</>],
+                    code: [`<h1 style="font-size:60px;">Heading 1</h1>`],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_headings_size"
+                }
+
+            },
+            {
+                name: "Box3",
+                props: {
+                    title: "HTML Tag Reference",
+                    info: ["W3Schools' tag reference contains additional information about these tags and their attributes."],
+                }
+
+            },
+            {
+                name: "Box5",
+                props: {
+                    info: "For a complete list of all available HTML tags, visit our HTML Tag Reference."
+                }
+            }
+
+        ]
+    },
+    {
+        section: "HTML",
+        page_name: "Forms Attributes",
+        components: [
+            {
+                name: "Box3",
+                props: {
+                    head: "HTML Paragraphs",
+                    info: [<>"A paragraph always starts on a new line, and is usually a block of text."</>],
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: "HTML Paragraphs",
+                    info: [
+                        <>The HTML <span className='red_grey'>&lt;p&gt;</span> element defines a paragraph.</>,
+                        <>A paragraph always starts on a new line, and browsers automatically add some white space (a margin) before and after a <span className='red_grey'>&lt;p&gt;</span> element.</>
+                    ],
+                    code: ["<p>This is a paragraph.</p>", "<p>This is another paragraph.</p>"],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_paragraphs1"
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: "HTML Display",
+                    info: [
+                        <>You cannot be sure how HTML will be displayed.</>,
+                        <>Large or small screens, and resized windows will create different results.</>,
+                        <>With HTML, you cannot change the display by adding extra spaces or extra lines in your HTML code.</>,
+                        <>The browser will automatically remove any extra spaces and lines when the page is displayed:</>
+                    ],
+                    code: [
+                        "<p>",
+                        "This paragraph",
+                        "contains a lot of lines",
+                        "in the source code,",
+                        "but the browser",
+                        "ignores it.",
+                        "</p>",
+                        "<p>",
+                        "This paragraph",
+                        "contains         a lot of spaces",
+                        "in the source         code,",
+                        "but the        browser",
+                        "ignores it.",
+                        "</p>"
+                    ],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_paragraphs2"
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: "HTML Horizontal Rules",
+                    info: [
+                        <>The <span className='red_grey'>&lt;hr&gt;</span> tag defines a thematic break in an HTML page, and is most often displayed as a horizontal rule.</>,
+                        <>The <span className='red_grey'>&lt;hr&gt;</span> element is used to separate content (or define a change) in an HTML page:</>
+                    ],
+                    code: ["<h1>This is heading 1</h1>",
+                        "<p>This is some text.</p>",
+                        "<hr>",
+                        "<h2>This is heading 2</h2>",
+                        "<p>This is some other text.</p>",
+                        "<hr>"
+                    ],
+                    data: <><span className='red_grey'>&lt;hr&gt;</span> tag is an empty tag, which means that it has no end tag.</>,
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_headings_hr"
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: "HTML Line Breaks",
+                    info: [
+                        <>The HTML <span className='red_grey'>&lt;br&gt;</span> element defines a line break.</>,
+                        <>Use <span className='red_grey'>&lt;br&gt;</span> if you want a line break (a new line) without starting a new paragraph:</>
+                    ],
+                    code: ["<p>This is<br>a paragraph<br>with line breaks.</p>"],
+                    data: <><span className='red_grey'>&lt;br&gt;</span> tag is an empty tag, which means that it has no end tag.</>,
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_paragraphs"
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: "The Poem Problem",
+                    info: [<>"This poem will display on a single line:"</>],
+                    code: [
+                        "<p>",
+                        "My Bonnie lies over the ocean.",
+                        "My Bonnie lies over the sea.",
+                        "My Bonnie lies over the ocean.",
+                        "Oh, bring back my Bonnie to me.",
+                        "</p>"
+                    ],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_poem"
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: "Solution - The HTML <pre> Element",
+                    info: [
+                        <>The HTML <span className='red_grey'>&lt;pre&gt;</span> element defines preformatted text. The text inside a <span className='red_grey'>&lt;pre&gt;</span> element is displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks:</>
+                    ],
+                    code: ["<pre>",
+                        "My Bonnie lies over the ocean.",
+                        "My Bonnie lies over the sea.",
+                        "My Bonnie lies over the ocean.",
+                        "Oh, bring back my Bonnie to me.",
+                        "</pre>"
+                    ],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_pre",
+                }
+            },
+            {
+                name: "Box3",
+                props: {
+                    title: "HTML Tag Reference",
+                    info: [<>"W3Schools' tag reference contains additional information about these tags and their attributes."</>],
+                }
+            },
+            {
+                name: "Box5",
+                props: {
+                    info: <>"For a complete list of all available HTML tags, visit our HTML Tag Reference."</>
+                }
+            }
+        ]
+    },
+
+    {
+        section: "HTML",
+        page_name: "Form Types",
+        components: [
+            {
+                name: "Box2",
+                props: {
+                    head: "HTML Styles",
+                    info: ["The HTML style attribute is used to add styles to an element, such as color, font, size, and more."],
+                    code: ["I am Red",
+                        "I am Blue",
+                        "I am Big",
+                    ],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_styles_intro",
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: "The HTML Style Attribute",
+                    info: ["Setting the style of an HTML element, can be done with the style attribute.",
+                        "The HTML style attribute has the following syntax:"
+                    ],
+                    code: [`<tagname style="property:value;">`],
+                }
+            },
+            {
+                name: "Box5",
+                props: {
+                    info: "You will learn more about CSS later in this tutorial.",
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: "Background Color",
+                    info: ["The CSS background-color property defines the background color for an HTML element."],
+                    example_info: ["Set the background color for a page to powderblue:"],
+                    code: [`<body style="background-color:powderblue;">`,
+                        "<h1>This is a heading</h1>",
+                        "<p>This is a paragraph.</p>",
+                        "</body>"
+                    ],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_styles_background-color"
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    example_info: ["Set background color for two different elements:"],
+                    code: ["<body>",
+                        `<h1 style="background-color:powderblue;">This is a heading</h1>`,
+                        `<p style="background-color:tomato;">This is a paragraph.</p>`,
+                        "</body>"
+                    ],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_styles_background-color2",
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: "Text Color",
+                    info: ["The CSS color property defines the text color for an HTML element:"],
+                    code: [`<h1 style="color:blue;">This is a heading</h1>
+                    <p style="color:red;">This is a paragraph.</p>
+                    `],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_styles_color"
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: "Fonts",
+                    info: ["The CSS font-family property defines the font to be used for an HTML element:"],
+                    code: [`<h1 style="font-family:verdana;">This is a heading</h1>`,
+                        `<p style="font-family:courier;">This is a paragraph.</p>`
+                    ],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_styles_font-family"
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: "Text Size",
+                    info: ["The CSS font-size property defines the text size for an HTML element:"],
+                    code: [`<h1 style="font-size:300%;">This is a heading</h1>
+                    <p style="font-size:160%;">This is a paragraph.</p>`],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_styles_color",
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: "Text Alignment",
+                    info: ["The CSS text-align property defines the horizontal text alignment for an HTML element:"],
+                    code: [`<h1 style="text-align:center;">Centered Heading</h1>
+                    <p style="text-align:center;">Centered paragraph.</p>
+                    `],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_styles_color",
+                }
+            },
+            {
+                name: "Box3",
+                props: {
+                    title: "Chapter Summary",
+                    links: [
+                        <>Use the <span className='red_grey'>style</span> attribute for styling HTML elements</>,
+                        <>Use <span className='red_grey'>background-color</span> for background color</>,
+                        <>Use <span className='red_grey'>color</span> for text colors</>,
+                        <>Use <span className='red_grey'>font-family</span> for text fonts</>,
+                        <>Use <span className='red_grey'>font-size</span> for text sizes</>,
+                        <>Use <span className='red_grey'>text-align</span> for text alignment</>
+                    ],
+
+                }
+            },
+        ]
+
+    },
+    {
+        section: "HTML",
+        page_name: "Input Field",
+        components: [
+            {
+                name: "Box2",
+                props: {
+                    head: "HTML Text Formatting",
+                    info: ["HTML contains several elements for defining text with a special meaning."],
+                    code: [`This text is bold
+                    This text is italic
+                    This is subscript and superscript`],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_intro",
+                }
+            },
+            {
+                name: "Box3",
+                props: {
+                    title: "HTML Formatting Elements",
+                    info: ["Formatting elements were designed to display special types of text:"],
+                    links: [
+                        <><span className='red_grey'>&lt;b&gt;</span> for bold text</>,
+                        <><span className='red_grey'>&lt;strong&gt;</span> for important text</>,
+                        <><span className='red_grey'>&lt;i&gt;</span> for italic text</>,
+                        <><span className='red_grey'>&lt;em&gt;</span> for emphasized text</>,
+                        <><span className='red_grey'>&lt;mark&gt;</span> for marked text</>,
+                        <><span className='red_grey'>&lt;small&gt;</span> for smaller text</>,
+                        <><span className='red_grey'>&lt;del&gt;</span> for deleted text</>,
+                        <><span className='red_grey'>&lt;ins&gt;</span> for inserted text</>,
+                        <><span className='red_grey'>&lt;sub&gt;</span> for subscript text</>,
+                        <><span className='red_grey'>&lt;sup&gt;</span> for superscript text</>
+                    ]
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: "HTML <b> and <strong> Elements",
+                    info: ["The HTML <b> element defines bold text, without any extra importance."],
+                    code: ["<b>This text is bold</b>"],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_b",
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    info: ["The HTML <strong> element defines text with strong importance. The content inside is typically displayed in bold."],
+                    code: ["<strong>This text is important!</strong>"],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_strong"
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: "HTML <i> and <em> Elements",
+                    info: ["The HTML <i> element defines a part of text in an alternate voice or mood. The content inside is typically displayed in italic.",
+                        "Tip: The <i> tag is often used to indicate a technical term, a phrase from another language, a thought, a ship name, etc."
+                    ],
+                    code: ["<i>This text is italic</i"],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_i",
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    info: ["The HTML <em> element defines emphasized text. The content inside is typically displayed in italic.",
+                        "Tip: A screen reader will pronounce the words in <em> with an emphasis, using verbal stress."
+                    ],
+                    code: ["<i>This text is italic</i"],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_i",
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: "HTML <small> Element",
+                    info: ["The HTML <small> element defines smaller text:"],
+                    code: ["<small>This text is small</small>"],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_i",
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: "HTML <ins> Element",
+                    info: ["The HTML <ins> element defines a text that has been inserted into a document. Browsers will usually underline inserted text:"],
+                    code: ["<p>My favorite color is <del>blue</del> <ins>red</ins>.</p>"],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_sub"
+                }
+            },
+            {
+                name: "Box2",
+                props: {
+                    title: "HTML <sub> Element",
+                    info: ["The HTML <sub> element defines subscript text. Subscript text appears half a character below the normal line, and is sometimes rendered in a smaller font. Subscript text can be used for chemical formulas, like H2O:"],
+                    code: [`<p>This is <sub>subscripted</sub> text.</p>`],
+                    src: "https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_sub"
+                }
+            }
+        ]
+    },
+    //
+    //
+    // section 2 ends
+
     // css
     // cs
     // cs

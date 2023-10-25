@@ -1,4 +1,5 @@
 import React from "react";
+import UserNavbar from "../Navbar/UserNavbar";
 
 export default function Cards({
   displayImage,
@@ -11,6 +12,7 @@ export default function Cards({
 }) {
   return (
     <>
+    
       <div className="w-[18rem] p-5 border-[1px] border-gray-300 rounded-md  relative">
         <div className="flex items-center justify-center">
           <img

@@ -1,6 +1,5 @@
 {
   "name": "w3schools",
-  "homepage": "https://SamarthJain1.github.io/W3Schools_clone_react",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

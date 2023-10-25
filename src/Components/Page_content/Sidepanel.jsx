@@ -9,8 +9,8 @@ const Sidepanel = () => {
     const sectionLinks = dataInfo.filter(entry => entry.section.toLowerCase() === currentSection);
 
     return (
-        <div className='fixed w-[14%] bg-[#e7e9eb] mt-[95px] h-[100vh] overflow-y-auto'>
-            <div className='flex flex-col justify-center'>
+        <div className='fixed w-[14%] bg-[#e7e9eb] mt-[95px] h-[87vh] overflow-y-auto'>
+            <div className='flex flex-col justify-center gap-2'>
                 <h1 className='text-xl font-normal p-4'>{currentSection.toUpperCase()} Tutorial</h1>
 
                 {sectionLinks.map((ele, index) => (

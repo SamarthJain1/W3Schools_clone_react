@@ -27,9 +27,9 @@ const App = () => {
   }, []);
   return (
     <>
-      <Router basename='/W3Schools_clone_react'>
+      <Router>
         <Routes>
-          <Route exact path='/' element={<MainHeader />} />
+          <Route path='/' element={<MainHeader />} />
           <Route path="/signup" element={<SignUpPage />} />
           <Route path="/signuppage" element={<Signup />} />
           <Route path='/login' element={<Login />} />
